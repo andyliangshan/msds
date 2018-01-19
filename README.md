@@ -39,7 +39,7 @@
 * 正常部署
   - 1. `npm run build -- --release`
   - 2. `npm run revplacify`  l流程中版本替换有bug，若果使用此命令，请在最后执行 `npm run revReplify` 执行版本替换
-  - 3. `scp -r build/ root@101.200.163.125:'/alidata/www/msds-sempc'`      pass  SEM687tax
+  - 3. `scp -r build/ root@（服务器IP）:'/alidata/www/msds-sempc'`
   - **1-3 可直接执行 `sh doc/bash/prod.sh`**
   - server bash
   - `nvm use 7.9.0` or `screen -r pc`
@@ -49,7 +49,7 @@
 * ie8 部署
   - 1. `npm run build -- --release --ie8`
   - 2. `npm run revplacify`
-  - 3. `scp -r build/ root@101.200.163.125:'/alidata/www/msds-sempc-ie8'`  pass  SEM687tax
+  - 3. `scp -r build/ root@（服务器IP）:'/alidata/www/msds-sempc-ie8'`
   - **1-3 可直接执行 `sh doc/bash/prodid8.sh`**
   - server bash
   - `nvm use 7.9.0` or `screen -r pc`
