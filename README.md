@@ -84,7 +84,7 @@
 
 ## webpack 引用图片 cdn 加速问题
 * `require('../../abc.png')` 此种方式会自动 根据 环境 添加 cdn 前缀， 具体请参考 `webpack.config.js`
-* `<img src = {`{__CDN__}/public/image/abc.png`} />` 方式引用图片时， 请手动添加 `__CDN__` 变量， __CDN__ 会根据环境 自动指定， dev -> '' ; prod -> 'http://cdn.lp.liuxue.com' ;
+* `<img src = {`{__CDN__}/public/image/abc.png`} />` 方式引用图片时， 请手动添加 `__CDN__` 变量， __CDN__ 会根据环境 自动指定， dev -> '' ; prod -> 'CDN地址' ;
 
 ### 对于页面逻辑较少，样式为主的sem pc页面，react0.14.x将完全够用，只是开发中应格外小心，对于新模块等要时刻保证ie8的兼容性
   - 抛弃 `import` 等关键字
