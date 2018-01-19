@@ -1,0 +1,848 @@
+@import '../_bsCommon';
+@import '../_variables';
+@import '../_noresponse';
+@import '../_mixins';
+@import '../../libs/bootstrap/less/tables';
+
+#app {
+  .navbar-fixed-top {
+    .navbar-wrap {
+      .navbar-header {
+        .navbar-brand {
+          background: url('../../img/other/yupei/logo4.png') no-repeat;
+          background: -webkit-image-set(url(/public/img/other/yupei/logo4.png) 1x, url(/public/img/other/yupei/logo3.png) 2x) center; //  stylelint-disable-line
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  .yupei-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  .rel1000 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .yupei-introduction {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+
+    .rel1000 {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .yupei-text {
+      height: 344px;
+      padding: 50px 0;
+      background-color: #fff;
+      box-shadow: 0 0 30px rgba(4, 0, 0, .1);
+      //behavior: url(../../../public/pie/PIE.htc);
+
+      p {
+        width: 735px;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 28px;
+        color: #333;
+
+        strong {
+          font-size: 20px;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .yupei-text-button {
+      text-align: center;
+      padding-top: 40px;
+
+      .margin-right {
+        margin-right: 70px;
+      }
+
+      p {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        display: inline-block;
+
+        a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #636ae6;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          //-webkit-border-radius: 23px;
+          //-moz-border-radius: 23px;
+          border-radius: 23px;
+          line-height: 30px;
+          text-align: center;
+          display: block;
+
+          &:hover {
+            text-decoration: none;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .yupei-famteacher {
+    text-align: center;
+    padding: 50px 0;
+
+    h3 {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .famteacher-content {
+      padding-top: 30px;
+
+      img {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .famteacher-wrap {
+    text-align: center;
+    padding-bottom: 60px;
+
+    .consultant-content {
+      border: 1px solid #e8e8e8;
+      margin: 0 8px;
+      overflow: hidden;
+      position: relative;
+      height: 505px;
+
+      img {
+        display: inline-block;
+        height: 220px;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin: 20px 0 13px;
+      }
+
+      p {
+        font-size: 12px;
+        color: #666;
+        line-height: 20px;
+        margin-bottom: 0;
+        padding: 0 10px;
+      }
+
+      .consultant-button {
+        width: 170px;
+        height: 30px;
+        display: inline-block;
+        bottom: 20px;
+        position: absolute;
+        left: 13%;
+
+        .yuyue-modal-btn {
+          width: 100%;
+          background-color: #636ae6;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          height: 30px;
+          //-webkit-border-radius: 23px;
+          //-moz-border-radius: 23px;
+          border-radius: 23px;
+          line-height: 30px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+
+    .slick-prev {
+      left: -50px;
+      top: 55%;
+    }
+
+    .slick-next {
+      right: -50px;
+      top: 55%;
+    }
+
+    .slick-arrow {
+      z-index: 99;
+      height: 40px;
+      width: 40px;
+      background: url('../../img/other/yupei/left1.png') no-repeat;
+      background: -webkit-image-set(url(/public/img/other/yupei/left1.png) 1x, url(/public/img/other/yupei/left2.png) 2x) center; //  stylelint-disable-line
+      background-size: contain;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+      content: normal;
+    }
+
+    .slick-next {
+      background: url('../../img/other/yupei/right2.png') no-repeat;
+      background: -webkit-image-set(url(/public/img/other/yupei/right2.png) 1x, url(/public/img/other/yupei/right1.png) 2x) center; //  stylelint-disable-line
+      background-size: contain;
+    }
+  }
+
+  .scientific-positioning {
+    background-color: #656ce6;
+    height: 520px;
+    text-align: center;
+    padding-top: 60px;
+
+    h3 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: #fff;
+      margin: 0;
+      padding-bottom: 55px;
+    }
+
+    .scientific-tab {
+      border: none;
+      padding-left: 78px;
+
+      .active {
+        box-shadow: 0 0 20px rgba(15, 34, 59, .24);
+
+        a {
+          border-color: transparent;
+          font-size: 15px;
+        }
+      }
+
+      li {
+        background-color: #fff;
+        width: 110px;
+        height: 48px;
+        border-radius: 0;
+        margin-right: 12px;
+        padding: 3px 0;
+
+        a {
+          padding: 0;
+          font-size: 14px;
+          color: #444ce2;
+          font-weight: bolder;
+
+          strong {
+            display: block;
+          }
+
+          &:hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: #444ce2;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .scientfic-macimg {
+      background: url('../../img/other/yupei/mac.png') no-repeat;
+      width: 796px;
+      height: 491px;
+      margin: 23px auto 0;
+      padding-top: 67px;
+
+      .padding-around {
+        padding: 13px 20px;
+      }
+
+      .tab-pane {
+        width: 583px;
+        height: 343px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .tab-pane-top {
+          text-align: center;
+        }
+
+        .tab-pane-down {
+          padding-top: 10px;
+
+          .nav-tabs {
+            border: 1px solid #f1f1f1;
+            border-bottom: none;
+
+            .active {
+              a {
+                border-color: transparent;
+                color: #ff5a00;
+                font-weight: bolder;
+              }
+            }
+
+            li {
+              width: 25%;
+              margin-bottom: 0;
+
+              a {
+                padding: 0;
+                height: 26px;
+                line-height: 26px;
+                color: #333;
+
+                &:hover {
+                  background-color: #fff;
+                  border-color: transparent;
+                  color: #ff5a00;
+                }
+              }
+            }
+          }
+
+          .tab-content {
+            .tab-pane {
+              width: 100%;
+            }
+
+            table {
+              border-color: #f1f1f1;
+              width: 100%;
+
+              tbody {
+                tr {
+                  .text-over-ellipsis;
+
+                  td {
+                    border-color: #f1f1f1;
+                    height: 28px;
+                    padding: 5px;
+                    overflow: hidden;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+
+            .tab-button {
+              text-align: center;
+              display: block;
+              //padding-top: 10px;
+
+              .yuyue-modal-btn {
+                background-color: #636ae6;
+                color: #fff;
+                height: 26px;
+                border-radius: 12px;
+                line-height: 26px;
+                width: 160px;
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      #scientific2 {
+        .tab-pane-down {
+          padding: 20px 30px;
+        }
+
+        .nav-tabs {
+          height: 52px;
+
+          li {
+            width: 33%;
+
+            a {
+              line-height: 20px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+
+      #scientific6 {
+        table {
+          td {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .yuanmeng {
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 240px;
+
+    .yuanmeng-title {
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .yuanmeng-content {
+      position: relative;
+
+      .yuanmeng-img {
+        width: 320px;
+        height: 150px;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+
+        h4 {
+          font-size: 20px;
+          position: absolute;
+          top: 60px;
+          left: 20px;
+          z-index: 1;
+        }
+
+        p {
+          font-size: 13px;
+          position: absolute;
+          top: 100px;
+          left: 20px;
+          z-index: 1;
+          right: 19px;
+        }
+      }
+
+      .yuanmeng-text {
+        border: 1px solid #e8e8e8;
+        text-align: left;
+        padding: 10px;
+        margin-right: 13px;
+        height: 166px;
+        overflow: hidden;
+        //overflow: scroll;
+        position: relative;
+
+        p {
+          line-height: 24px;
+          font-size: 14px;
+          margin-bottom: 0;
+          font-weight: bolder;
+
+          strong {
+            color: #464ee2;
+          }
+        }
+
+        .scroll-img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .scroll-text {
+          position: relative;
+          top: 0;
+          transition: top .5s ease-in-out;
+        }
+
+        &:hover {
+          .scroll-text {
+            top: -109px;
+          }
+        }
+      }
+    }
+  }
+
+  .yupei-case {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-bottom: 60px;
+
+    .yupei-case-container {
+      h3 {
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 0;
+        padding: 60px 0 30px;
+      }
+
+      .table-content {
+        border: 1px solid #e3eaee;
+        border-radius: 10px;
+        //overflow: scroll;
+        //height: 476px;
+        -ms-overflow-style: none;
+
+        .table {
+          width: 100%;
+          box-shadow: 0 0 8px rgba(4, 0, 0, .04);
+          background-color: #fff;
+          border-radius: 10px;
+          margin-bottom: 0;
+
+          thead {
+            border-bottom: 1px solid #e3eaee;
+
+            tr {
+              th {
+                color: #272727 !important;
+                line-height: 50px !important;
+              }
+            }
+          }
+
+          thead,
+          tbody {
+            display: block;
+
+            tr {
+              display: block;
+              width: 100%;
+              text-align: left;
+
+              th {
+                border: none;
+                text-align: center;
+                color: #666;
+                line-height: 30px;
+                display: inline-block;
+                padding: 0;
+                width: 83px;
+              }
+
+              .blue {
+                color: #39bbff !important;
+              }
+
+              .blue-d {
+                color: #4977ef !important;
+              }
+
+              .blue-l {
+                color: #464ee2 !important;
+              }
+            }
+          }
+
+          tbody {
+            padding: 5px 0;
+            height: 423px;
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .case-analysis {
+    text-align: center;
+    padding-top: 60px;
+
+    h3 {
+      font-size: 30px;
+      font-weight: bolder;
+      margin: 0;
+    }
+
+    .case-items {
+      width: 1060px;
+      margin: 0 auto;
+
+      .case-tab-list {
+        position: relative;
+        margin-top: 30px;
+
+        .margin30 {
+          margin: 30px;
+          border: 1px solid #f6f6f6;
+          box-shadow: 0 0 30px rgba(4, 0, 0, .08);
+          background-color: #f6fafd;
+
+          .tab-list-up {
+            height: 111px;
+            background-color: #fff;
+
+            .up-list {
+              padding: 0;
+              text-align: center;
+              width: 900px;
+              position: absolute;
+              top: -10px;
+              left: 80px;
+
+              .list-img {
+                list-style: none;
+                height: 160px;
+                width: 180px;
+                float: left;
+                font-weight: bolder;
+
+                img {
+                  display: inline-block;
+                }
+
+                p {
+                  font-size: 20px;
+                  color: #272727;
+                  line-height: 26px;
+                }
+              }
+            }
+          }
+
+          .tab-list-down {
+            height: 280px;
+            border-top: 1px dashed #e1e9ef;
+            padding: 30px;
+
+            .tab-list-left {
+              width: 55%;
+              float: left;
+              text-align: left;
+              border-right: 1px dashed #e0e0e0;
+              padding-right: 10px;
+
+              h4 {
+                font-size: 20px;
+                color: #272727;
+                margin: 0 0 5px -12px;
+                font-weight: bolder;
+              }
+
+              p {
+                color: #606060;
+                font-size: 15px;
+                line-height: 34px;
+                margin-bottom: 0;
+              }
+            }
+
+            .tab-list-right {
+              width: 45%;
+              float: left;
+              text-align: center;
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+
+      .slick-arrow {
+        z-index: 99;
+        height: 40px;
+        width: 40px;
+      }
+
+      .slick-prev::before,
+      .slick-next::before {
+        content: normal;
+      }
+
+      .slick-prev {
+        background: url('../../img/other/yupei/left1.png') no-repeat;
+        background: -webkit-image-set(url(../../img/other/yupei/left1.png) 1x, url(../../img/other/yupei/left2.png) 2x) center; //  stylelint-disable-line
+        background-size: contain;
+        top: 55%;
+      }
+
+      .slick-next {
+        background: url('../../img/other/yupei/right2.png') no-repeat;
+        background: -webkit-image-set(url(/public/img/other/yupei/right2.png) 1x, url(/public/img/other/yupei/right1.png) 2x) center; //  stylelint-disable-line
+        background-size: contain;
+        top: 55%;
+      }
+    }
+
+    .wechat-img {
+      padding-top: 30px;
+
+      img {
+        height: 265px;
+        margin-right: 15px;
+      }
+
+      .slick-prev::before,
+      .slick-next::before {
+        content: normal;
+      }
+    }
+
+    .yupei-img {
+      padding: 50px 0 60px;
+
+      .ielts-img {
+        float: left;
+        cursor: pointer;
+      }
+
+      .toefl-img {
+        float: right;
+        cursor: pointer;
+      }
+
+      .ielts-img,
+      .toefl-img {
+        position: relative;
+
+        a {
+          display: block;
+          cursor: pointer;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .related-business {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    height: 390px;
+
+    h3 {
+      font-size: 30px;
+      font-weight: bolder;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    .related-business-content {
+      .col-xs-3 {
+        padding: 0;
+        position: relative;
+
+        .related-img {
+          position: absolute;
+          width: 100%;
+          height: 200px;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 180px;
+          }
+        }
+
+        p {
+          margin: 0;
+          padding-top: 9px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  .footer-form {
+    background-color: #656ce6;
+    height: 450px;
+
+    h2 {
+      font-size: 50px;
+      font-weight: bolder;
+      display: inline-block;
+      float: left;
+      text-align: left;
+      color: #fff;
+      line-height: 72px;
+      top: 50%;
+      margin-top: 153px;
+    }
+
+    .footer-form-content {
+      width: 370px;
+      height: 260px;
+      background-color: #f0f1fd;
+      border-radius: 6px;
+      display: inline-block;
+      float: right;
+      margin-right: 40px;
+      margin-top: 93px;
+      padding: 35px 30px;
+
+      .form-input {
+        input,
+        .application-project {
+          width: 150px;
+          height: 40px;
+          border: 1px solid #d0e0e7;
+          border-radius: 6px;
+          background-color: #fff;
+          padding-left: 10px;
+          float: left;
+          margin-bottom: 10px;
+          line-height: 40px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .application-project {
+          float: right;
+
+          .div-btn {
+            p {
+              color: #333;
+              line-height: 40px;
+            }
+
+            .caret {
+              top: 13px;
+              border-bottom: 2px solid #ddd;
+            }
+          }
+
+          .dropdown-menu {
+            min-width: 150px;
+
+            li {
+              padding-left: 10px;
+            }
+          }
+        }
+
+        .phone-number {
+          width: 100%;
+        }
+      }
+
+      .yupei-btn {
+        width: 100%;
+        height: 40px;
+        background-color: #ee1d44;
+        border-color: #ee1d44;
+      }
+    }
+  }
+
+  .footer-banner {
+    display: none;
+  }
+}

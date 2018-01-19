@@ -1,0 +1,6 @@
+{
+  "name": "Live800",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Live800.js"
+}

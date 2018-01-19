@@ -1,0 +1,646 @@
+@import '../../../less/_bsCommon';
+@import '../../../less/_variables';
+@import '../../../less/_noresponse';
+@import '../../../less/_mixins';
+@import '../../../libs/bootstrap/less/tables';
+
+@global-color: #f6415d;
+
+#toelf {
+  .yupei-banner {
+    width: 100%;
+    //height: 360px;
+    min-width: 1000px;
+    position: relative;
+
+    //background: url("/public/img/other/yasi/yasi-banner.png") no-repeat center top;
+    .banner-content {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      margin-top: -130px;
+
+      .banner-text {
+        width: 1000px;
+        margin: 0 auto;
+
+        .footer-form-content {
+          width: 370px;
+          height: 260px;
+          background-color: #eaeff4;
+          border-radius: 6px;
+          display: inline-block;
+          float: right;
+          padding: 35px 30px;
+
+          .form-input {
+            input,
+            .application-project {
+              width: 150px;
+              height: 40px;
+              border: 1px solid #d0e0e7;
+              border-radius: 6px;
+              background-color: #fff;
+              padding-left: 10px;
+              float: left;
+              margin-bottom: 10px;
+              line-height: 40px;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .application-project {
+              float: right;
+
+              .div-btn {
+                p {
+                  color: #333;
+                  line-height: 40px;
+                }
+
+                .caret {
+                  top: 13px;
+                  border-bottom: 2px solid #ddd;
+                }
+              }
+
+              .dropdown-menu {
+                min-width: 150px;
+
+                li {
+                  padding-left: 10px;
+                }
+              }
+            }
+
+            input,
+            .phone-number {
+              width: 100%;
+            }
+          }
+
+          .yupei-btn {
+            width: 100%;
+            height: 40px;
+            background-color: #ff1d42;
+            border-color: #ff1d42;
+            font-size: 16px;
+            text-shadow: none;
+            box-shadow: none;
+          }
+        }
+
+        .banner-btn {
+          width: 134px;
+          height: 36px;
+          position: absolute;
+          bottom: -20%;
+          left: 26%;
+          z-index: 99;
+
+          a {
+            color: #fff;
+            width: 134px;
+            height: 36px;
+            background-color: #ff1d42;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 23px;
+            line-height: 36px;
+            text-align: center;
+            display: block;
+
+            &:hover {
+              text-decoration: none;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .yupei-introduction {
+    text-align: center;
+
+    .yasi-text {
+      box-shadow: none;
+
+      h3 {
+        font-size: 30px;
+        color: #333;
+        margin: 0;
+        font-weight: bolder;
+        margin-bottom: 3px;
+      }
+
+      p {
+        color: #666;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 25px;
+      }
+
+      .yasi-country {
+        .col-xs-3 {
+          height: 285px;
+          padding: 0;
+          border: 1px solid #e8e8e8;
+          margin-right: 25px;
+          width: 231px;
+          background-color: #fff;
+
+          img {
+            padding-bottom: 10px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 22px;
+            text-align: left;
+            padding: 0 15px;
+            color: #666;
+            font-weight: bolder;
+          }
+        }
+
+        .no-margin {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .yupei-text-button {
+      padding-top: 30px;
+
+      p {
+        width: 320px !important;
+        margin-bottom: 0;
+
+        a {
+          background-color: #ffa200 !important;
+        }
+      }
+    }
+  }
+
+  .yasi-difficulty {
+    padding: 60px 0 20px;
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      color: #333;
+      margin: 0;
+      font-weight: bolder;
+      margin-bottom: 40px;
+    }
+
+    .yasi-difficulty-content {
+      overflow: hidden;
+
+      img {
+        width: 160px;
+        float: left;
+      }
+
+      .difficulty-box {
+        float: left;
+        padding-bottom: 40px;
+        width: 450px;
+      }
+
+      .more-width {
+        width: 550px;
+      }
+
+      .right-text {
+        padding-left: 180px;
+
+        h5 {
+          font-size: 18px;
+          font-weight: bolder;
+          color: #272727;
+          margin-top: 0;
+          margin-bottom: 12px;
+        }
+
+        p {
+          color: #808080;
+          font-size: 13px;
+          line-height: 24px;
+          margin-bottom: 0;
+          .text-over-ellipsis;
+
+          strong {
+            color: #000;
+          }
+
+          .text-box {
+            display: block;
+            padding-left: 130px;
+          }
+
+          .text-box-last {
+            display: block;
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .yupei-famteacher-container {
+    background-color: #f7f7f7;
+
+    .famteacher-content {
+      p {
+        padding: 0 10px;
+      }
+    }
+
+    .famteacher-wrap {
+      .consultant-content {
+        .consultant-button {
+          .yuyue-modal-btn {
+            background-color: #ffa200;
+            border: none;
+
+            &:hover {
+              border-color: #ffa200;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .yasi-plan {
+    .yasi-plan-img {
+      width: 100%;
+      height: 450px;
+      min-width: 1000px;
+      background: url('/public/img/other/tuofu/tuofu-back1-1.png') no-repeat center top;
+
+      .yasi-plan-form {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+
+        .yasi-plan-btn {
+          padding-top: 317px;
+          padding-left: 40px;
+
+          a {
+            width: 184px;
+            background-color: #00367c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 23px;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+
+            &:hover {
+              text-decoration: none;
+              font-size: 17px;
+            }
+          }
+        }
+
+        .yasi-form-content {
+          width: 370px;
+          height: 300px;
+          background-color: #f6f8fc;
+          border-radius: 6px;
+          display: inline-block;
+          float: right;
+          padding: 35px 30px;
+          position: absolute;
+          top: 75px;
+          right: 0;
+
+          .form-input {
+            .application-project {
+              width: 150px;
+              height: 40px;
+              border: 1px solid #d0e0e7;
+              border-radius: 6px;
+              background-color: #fff;
+              padding-left: 10px;
+              float: left;
+              margin-bottom: 10px;
+              line-height: 40px;
+            }
+
+            .application-project {
+              float: right;
+
+              .div-btn {
+                p {
+                  color: #333;
+                  line-height: 40px;
+                }
+
+                .caret {
+                  top: 13px;
+                  border-bottom: 2px solid #ddd;
+                }
+              }
+
+              .dropdown-menu {
+                min-width: 150px;
+
+                li {
+                  padding-left: 10px;
+                }
+              }
+            }
+
+            .full-width {
+              width: 100%;
+
+              .dropdown-menu {
+                width: 100%;
+              }
+            }
+          }
+
+          .yasi-plan-table {
+            border: 1px solid #d0e0e7;
+            border-radius: 6px;
+            margin-top: 10px;
+
+            .table {
+              background-color: #fff;
+              border-radius: 6px;
+              margin-bottom: 0;
+
+              thead {
+                tr {
+                  font-size: 15px;
+                  color: #00367c;
+
+                  th {
+                    text-align: center;
+                    border-bottom: 0;
+                    padding: 2px;
+                  }
+                }
+              }
+
+              tbody {
+                tr {
+                  text-align: center;
+
+                  td {
+                    padding: 2px;
+                    border: none;
+                    color: #272727;
+                  }
+                }
+
+                .gray-back {
+                  background-color: #eef1f6;
+
+                  td {
+                    color: #6e7176;
+                  }
+                }
+              }
+            }
+          }
+
+          .yupei-btn {
+            width: 100%;
+            height: 40px;
+            background-color: #ffa200;
+            border-color: #ffa200;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .shunshun-exam {
+    text-align: center;
+    padding: 60px 0 10px;
+
+    h3 {
+      font-size: 30px;
+      color: #333;
+      margin: 0;
+      font-weight: bolder;
+      margin-bottom: 30px;
+    }
+
+    .shunshun-exam-tab {
+      border: none;
+      padding: 0 20px;
+
+      .active {
+        a {
+          border-color: transparent;
+        }
+      }
+
+      li {
+        background-color: #fff;
+        width: 137px;
+        height: 148px;
+        border-radius: 0;
+        margin-right: 0;
+
+        a {
+          padding: 0;
+          font-size: 14px;
+          color: #333;
+          font-weight: bolder;
+
+          img {
+            padding-bottom: 13px;
+          }
+
+          &:hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .shunshun-exam-content {
+      padding: 50px 0;
+
+      img {
+        width: 650px;
+      }
+
+      .yasi-text-button {
+        padding-top: 50px;
+
+        p {
+          width: 170px;
+          height: 30px;
+          display: inline-block;
+          margin-bottom: 0;
+
+          a {
+            width: 100%;
+            background-color: #ffa200;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 23px;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .scientific-positioning {
+    background-color: #335e96 !important;
+
+    .scientfic-macimg {
+      background: url('/public/img/other/yasi/mac3.png') no-repeat !important;
+
+      .tab-pane {
+        .tab-pane-down {
+          .tab-content {
+            .tab-button {
+              .yuyue-modal-btn {
+                background-color: #335e96 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .scientific-tab {
+      li {
+        a {
+          color: #1b4478 !important;
+
+          &:hover {
+            color: #1b4478 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .case-analysis {
+    padding-top: 240px !important;
+
+    .wechat-img {
+      img {
+        height: auto !important;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .curriculum-structure {
+    background-color: #f7f7f7;
+    margin: 60px 0 0;
+    padding: 60px 0;
+
+    .curriculum-structure-content {
+      h3 {
+        font-size: 30px;
+        color: #333;
+        margin: 0;
+        font-weight: bolder;
+        margin-bottom: 30px;
+      }
+
+      .curriculum-structure-table {
+        background-color: #fff;
+        text-align: center;
+        border: 1px solid #e3eaee;
+        box-shadow: 0 0 8px rgba(4, 0, 0, .04);
+        border-radius: 10px;
+
+        .table {
+          margin-bottom: 0;
+
+          tbody {
+            tr {
+              text-align: center;
+
+              .width300 {
+                width: 300px;
+              }
+
+              th {
+                text-align: center;
+                border-top: none;
+              }
+
+              td {
+                vertical-align: middle;
+                font-size: 13px;
+                color: #666;
+
+                p {
+                  margin: 0;
+
+                  .curriculumStructure {
+                    color: #666;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .consultant-button {
+        .yuyue-modal-btn {
+          border: none;
+          font-size: 13px;
+          width: auto;
+          height: auto;
+          margin-right: 0;
+          color: #666;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .related-business {
+    background-color: #fff;
+  }
+
+  .footer-form {
+    background-color: #335e96 !important;
+
+    .footer-form-content {
+      .yupei-btn {
+        text-shadow: none;
+        box-shadow: none;
+
+        &:hover {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

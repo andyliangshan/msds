@@ -1,0 +1,93 @@
+@import '../../../../less/_variables';
+@import '../../../../less/_mixins';
+
+.student {
+  height: 420px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-bottom: 0;
+  padding-top: 22px;
+  padding-left: 0;
+
+  li {
+    width: 460px;
+    height: 80px;
+    list-style: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #f3f6f8;
+    padding: 14px 20px 14px 30px;
+    margin: 0 25px 22px;
+    float: left;
+    position: relative;
+
+    span {
+      font-size: 16px;
+      color: #000;
+    }
+
+    .circle {
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bolder;
+      margin-right: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #363944;
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+    }
+
+    .Top {
+      width: 52px;
+      height: 22px;
+      line-height: 22px;
+      background-color: #ff5a00;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bolder;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+    .active {
+      display: none;
+    }
+
+    .name {
+      margin-right: 48px;
+    }
+
+    .last {
+      float: right;
+      color: #7b838e;
+      font-size: 16px;
+      margin-top: 14px;
+      margin-top: 12px\0;
+    }
+  }
+
+  .ex {
+    margin-top: 22px;
+  }
+
+  .even {
+    margin-left: 28px;
+    margin-right: 20px;
+  }
+}
+

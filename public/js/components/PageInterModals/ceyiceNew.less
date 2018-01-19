@@ -1,0 +1,125 @@
+.mark-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: '微软雅黑';
+
+  .main {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 60px;
+    padding: 30px 90px 20px;
+    background: #fff;
+    z-index: 10;
+    border-radius: 5px;
+    text-align: center;
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      font-size: 24px;
+    }
+
+    .title {
+      height: 31px;
+      margin-bottom: 30px;
+
+      h3 {
+        height: 100%;
+        line-height: 31px;
+        text-indent: -9999px;
+        background: url(./title_new.png) no-repeat;
+      }
+    }
+
+    .form {
+      .form-info {
+        width: 420px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 10px;
+
+        .desc {
+          width: 90px;
+          padding-left: 10px;
+          text-align: left;
+
+          i {
+            font-style: normal;
+            font-size: 16px;
+            padding-right: 3px;
+            color: #e52e16;
+            vertical-align: sub;
+          }
+        }
+
+        .info,
+        .remark {
+          width: 310px;
+          border: 1px solid #e3eaee;
+          border-radius: 3px;
+          cursor: pointer;
+          position: relative;
+          text-align: left;
+          padding-left: 10px;
+
+          .down {
+            position: absolute;
+            width: 13px;
+            height: 7px;
+            bottom: 15px;
+            right: 10px;
+            background: url(./down.png) no-repeat;
+          }
+        }
+
+        .remark {
+          cursor: auto;
+          height: 42px;
+          color: #000;
+        }
+      }
+
+      .submit {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bolder;
+        width: 175px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background: #d8434f;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 0 #af4049;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .4;
+    filter: Alpha(opacity=40);
+    //filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#7f000000', endcolorstr='#7f000000');
+  }
+
+  .err {
+    color: red;
+  }
+}

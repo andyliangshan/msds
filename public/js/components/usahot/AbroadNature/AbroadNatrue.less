@@ -1,0 +1,264 @@
+.static-modal {
+  color: #000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.backdrop-class {
+  filter: ~'alpha(opacity=50)';
+}
+
+#quetionlist {
+  overflow: hidden;
+
+  .modal-dialog {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px !important;
+  }
+
+  .modal-header {
+    border: none;
+    padding: 10px 20px 0;
+  }
+
+  .modal-body {
+    padding: 0 60px 30px;
+  }
+
+  .modal-mantitle {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-weight: 700;
+
+    em {
+      font-style: normal;
+      font-size: 20px;
+      font-family: Arial;
+      display: inline-block;
+      margin-right: 5px;
+      padding-top: 3px;
+    }
+  }
+
+  .modal-title {
+    clear: both;
+    overflow: hidden;
+    color: #808080;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 28px;
+
+    em {
+      display: inline-block;
+      font-style: normal;
+      color: #e52e16;
+      font-size: 20px;
+      font-family: Arial;
+      vertical-align: middle;
+      margin-top: 5px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+  .ques {
+    clear: both;
+    overflow: hidden;
+    padding-top: 15px;
+
+    .ques-title {
+      font-size: 14px;
+      color: #000;
+      font-weight: 700;
+    }
+
+    .ques-keys {
+      clear: both;
+      overflow: hidden;
+      padding-top: 5px;
+
+      label {
+        clear: both;
+        overflow: hidden;
+        margin: 5px 0 0;
+        color: #000;
+        padding-left: 2px;
+        line-height: 20px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+
+        input {
+          display: inline-block;
+          border: 1px solid #cad6de;
+          margin-right: 5px;
+          vertical-align: text-top;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .submitBtn {
+    clear: both;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      width: 120px;
+      height: 36px;
+      line-height: 36px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: #e52e16;
+      cursor: pointer;
+
+      &:hover {
+        background: #c81839;
+      }
+    }
+  }
+}
+
+#resultTab {
+  overflow: hidden;
+
+  .modal-dialog {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .modal-header {
+    height: 0;
+    border-bottom: none;
+  }
+
+  .modal-body {
+    padding: 0 30px 30px;
+    overflow: hidden;
+  }
+
+  .resultcon {
+    overflow: hidden;
+
+    .resultcon-title {
+      span {
+        font-family: Arial;
+        display: inline-block;
+        font-size: 22px;
+        color: #000;
+        font-weight: bold;
+      }
+
+      em {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin-left: 10px;
+        font-style: normal;
+      }
+    }
+
+    .resultcon-alisysic {
+      clear: both;
+      overflow: hidden;
+      padding: 15px 0 0;
+
+      .alisysic-title {
+        font-size: 14px;
+        color: #000;
+        font-weight: 700;
+      }
+
+      .alisysic-desc {
+        clear: both;
+        overflow: hidden;
+        color: #000;
+        line-height: 22px;
+        font-size: 14px;
+        padding-top: 5px;
+      }
+    }
+
+    .xinren {
+      clear: both;
+      overflow: hidden;
+      padding-top: 15px;
+      color: #808080;
+
+      em {
+        font-style: normal;
+        color: #e52e16;
+      }
+    }
+  }
+
+  .submitBtn {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+
+    .recive {
+      width: 120px;
+      display: inline-block;
+      float: left;
+      margin-left: 100px;
+      margin-right: 20px;
+
+      .yuyue-modal-btn {
+        width: 120px;
+        cursor: pointer;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #fff;
+        background: #e52e16;
+        font-size: 14px;
+
+        &:hover {
+          background: #c81839;
+        }
+      }
+    }
+
+    .nocase {
+      width: 120px;
+      cursor: pointer;
+      display: inline-block;
+      height: 36px;
+      line-height: 36px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #000;
+    }
+
+    .nocase {
+      background: #d4d4d4;
+
+      &:hover {
+        background: #bbb7b7;
+      }
+    }
+  }
+}
+

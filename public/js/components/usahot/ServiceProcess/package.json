@@ -1,0 +1,6 @@
+{
+  "name": "ServiceProcess",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ServiceProcess.js"
+}

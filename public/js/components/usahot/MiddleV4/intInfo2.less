@@ -1,0 +1,184 @@
+@hoverbg: #5d93df;
+
+@font30: 30px;
+
+@font18: 18px;
+
+@font16: 16px;
+
+@font15: 15px;
+
+@font14: 14px;
+
+@black: #000;
+
+@white: #fff;
+
+@blue: #7babee;
+
+@deepblue: #387bda;
+
+@color666: #666;
+
+.info {
+  width: 1000px;
+  margin: 0 auto;
+
+  .servicestudent-box {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .servicestudent-img {
+      float: left;
+      width: 408px;
+
+      img {
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+
+    .servicestudent-con {
+      float: left;
+      width: 592px;
+      padding: 0 0 0 45px;
+      height: 223px;
+      position: relative;
+
+      .servicestudent-title {
+        font-size: 20px;
+        color: @deepblue;
+        font-weight: bold;
+      }
+
+      .servicestudent-desc {
+        clear: both;
+        overflow: hidden;
+        padding-top: 15px;
+
+        .first-desc {
+          margin: 15px 0 30px;
+        }
+
+        p {
+          line-height: 26px;
+          margin: 0;
+          clear: both;
+          overflow: hidden;
+          color: #606060;
+
+          em {
+            display: inline-block;
+            font-style: normal;
+            width: 5px;
+            height: 5px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: #a4a5ab;
+            float: left;
+            vertical-align: middle;
+            margin-top: 10px;
+          }
+
+          span {
+            display: inline-block;
+            float: left;
+            width: 506px;
+            margin-left: 5px;
+          }
+        }
+
+        i {
+          font-style: normal;
+          color: #606060;
+          text-decoration: none;
+        }
+
+        a {
+          color: @deepblue;
+          border-bottom: 1px solid @deepblue;
+
+          &:hover {
+            text-decoration: none;
+            color: #00419d;
+            border-bottom: 1px solid #00419d;
+          }
+        }
+      }
+
+      .servicestudent-subcon {
+        clear: both;
+        overflow: hidden;
+        color: #808080;
+        font-size: 14px;
+        padding-top: 10px;
+
+        a {
+          color: #0084ff;
+
+          &:hover {
+            border-bottom: 1px dashed #0084ff;
+          }
+        }
+      }
+
+      .servicestudent-btn {
+        clear: both;
+        overflow: hidden;
+        padding-top: 15px;
+        position: absolute;
+        bottom: 0;
+
+        a {
+          display: inline-block;
+          width: 120px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          background: #7babee;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          &:hover {
+            text-align: center;
+            background: @hoverbg;
+          }
+        }
+
+        .red {
+          background: #ee1d44;
+
+          &:hover {
+            background: #c81839;
+          }
+        }
+      }
+
+      .yuyue-teacher {
+        .yuyue-modal-btn {
+          display: inline-block;
+          width: 120px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          background: #ee1d44;
+          cursor: pointer;
+
+          &:hover {
+            background: #c81839;
+          }
+        }
+      }
+    }
+  }
+}

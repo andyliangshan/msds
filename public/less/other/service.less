@@ -1,0 +1,883 @@
+@import '../_bsCommon';
+@import '../_variables';
+@import '../_noresponse';
+@import '../_mixins';
+
+body {
+  font-family: '微软雅黑' !important;
+  font-size: 14px;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+  }
+
+  .rel1100 {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  .navmenus {
+    padding: 80px 0 30px;
+    clear: both;
+    background: #f7f7f7;
+    overflow: hidden;
+
+    h2 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: #272727;
+      text-align: center;
+      margin: 0;
+    }
+
+    .rel1000 {
+      width: 1000px;
+      margin: 0 auto;
+
+      .ulcountry {
+        clear: both;
+        overflow: hidden;
+        padding-top: 30px;
+
+        .list {
+          float: left;
+          width: 104px;
+          height: 104px;
+          margin-right: 75px;
+          overflow: hidden;
+          cursor: pointer;
+
+          img {
+            width: 104px;
+            height: 104px;
+          }
+        }
+
+        .list1 {
+          background: url(/public/img/other/service/service-profs1.png) no-repeat;
+        }
+
+        .list1.active,
+        .list1:hover {
+          background: url(/public/img/other/service/service-profs1-h.png) no-repeat;
+        }
+
+        .list2 {
+          background: url(/public/img/other/service/service-profs2.png) no-repeat;
+        }
+
+        .list2.active,
+        .list2:hover {
+          background: url(/public/img/other/service/service-profs2-h.png) no-repeat;
+        }
+
+        .list3 {
+          background: url(/public/img/other/service/service-profs3.png) no-repeat;
+        }
+
+        .list3.active,
+        .list3:hover {
+          background: url(/public/img/other/service/service-profs3-h.png) no-repeat;
+        }
+
+        .list4 {
+          background: url(/public/img/other/service/service-profs4.png) no-repeat;
+        }
+
+        .list4.active,
+        .list4:hover {
+          background: url(/public/img/other/service/service-profs4-h.png) no-repeat;
+        }
+
+        .list5 {
+          background: url(/public/img/other/service/service-profs5.png) no-repeat;
+        }
+
+        .list5.active,
+        .list5:hover {
+          background: url(/public/img/other/service/service-profs5-h.png) no-repeat;
+        }
+
+        .list6 {
+          background: url(/public/img/other/service/service-profs6.png) no-repeat;
+        }
+
+        .list6.active,
+        .list6:hover {
+          background: url(/public/img/other/service/service-profs6-h.png) no-repeat;
+        }
+
+        .list.enddiv {
+          margin-right: 0;
+        }
+      }
+
+      .countrydesc {
+        clear: both;
+        overflow: hidden;
+        padding-top: 25px;
+        position: relative;
+
+        .range0 {
+          position: absolute;
+          left: 35px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .range1 {
+          position: absolute;
+          left: 216px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .range2 {
+          position: absolute;
+          left: 395px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .range3 {
+          position: absolute;
+          left: 573px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .range4 {
+          position: absolute;
+          left: 756px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .range5 {
+          position: absolute;
+          left: 935px;
+          top: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .datadesc {
+          clear: both;
+          border: 1px solid #f4f4f4;
+          background: #fff;
+          padding: 35px 0;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          -webkit-box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+          -moz-box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+          box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+
+          .desccon {
+            float: left;
+            width: 280px;
+            padding: 10px 0 10px 15px;
+            margin-left: 30px;
+            cursor: pointer;
+            position: relative;
+
+            .desccon-link {
+              font-size: 15px;
+              font-weight: 700;
+
+              em {
+                display: none;
+                font-style: normal;
+                color: #4872d6;
+                font-size: 15px;
+              }
+
+              a {
+                color: #4872d6;
+              }
+            }
+
+            .desccon-cont {
+              clear: both;
+              overflow: hidden;
+              padding-top: 10px;
+              color: #2b2b2b;
+              font-size: 14px;
+            }
+
+            .layerquery {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              cursor: pointer;
+              z-index: 1;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            &:hover {
+              background: #fff;
+              -webkit-border-radius: 8px;
+              -moz-border-radius: 8px;
+              border-radius: 8px;
+              -webkit-box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+              -moz-box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+              box-shadow: 0 5px 50px 0 rgba(4, 0, 0, 0.06);
+
+              em {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      .casedesc {
+        clear: both;
+        overflow: hidden;
+        padding-top: 50px;
+
+        .casedata {
+          clear: both;
+          overflow: hidden;
+          margin-bottom: 50px;
+          height: 230px;
+
+          .casedata-img {
+            width: 380px;
+            height: 230px;
+            float: left;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .casedata-desc {
+            float: left;
+            width: 620px;
+            padding: 18px 0 18px 30px;
+            overflow: hidden;
+
+            .casedata-desc-title {
+              font-size: 20px;
+              color: #2b2b2b;
+              font-weight: 700;
+            }
+
+            .casedata-desc-text {
+              clear: both;
+              overflow: hidden;
+              padding-top: 20px;
+
+              p {
+                margin-bottom: 0;
+                line-height: 32px;
+                font-size: 14px;
+                color: #666;
+
+                a {
+                  color: #666;
+
+                  &:hover {
+                    color: #000;
+                    border-bottom: 1px dashed #000;
+                  }
+                }
+
+                em {
+                  display: inline-block;
+                  float: left;
+                  font-style: normal;
+                }
+
+                .em1 {
+                  width: 45px;
+                }
+
+                .em2 {
+                  width: 545px;
+                }
+
+                i {
+                  display: inline-block;
+                  color: #df183e;
+                  font-style: normal;
+                }
+              }
+            }
+
+            .casedata-desc-query {
+              clear: both;
+              overflow: hidden;
+              padding-top: 20px;
+
+              a {
+                display: inline-block;
+                width: 120px;
+                line-height: 30px;
+                height: 30px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                background: #4872d6;
+
+                &:hover {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+
+          .casedata-desc-tesu {
+            padding-top: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  .feebox {
+    clear: both;
+    overflow: hidden;
+    padding: 80px 0;
+    background: #fff;
+
+    h2 {
+      font-size: 30px;
+      color: #272727;
+      font-weight: bolder;
+      margin: 0;
+      text-align: center;
+    }
+
+    .rel1000 {
+      width: 1000px;
+      margin: 0 auto;
+
+      .feelist {
+        clear: both;
+        overflow: hidden;
+        padding-top: 60px;
+
+        .feepic {
+          width: 180px;
+          height: 180px;
+          float: left;
+          margin-right: 25px;
+
+          .feedesc {
+            padding-top: 64px;
+            text-align: center;
+
+            .feedesc-title {
+              font-size: 24px;
+              color: #fff;
+              font-weight: bolder;
+            }
+
+            .feedesc-subtitle {
+              clear: both;
+              overflow: hidden;
+              padding-top: 10px;
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+
+          .feequery {
+            display: none;
+            width: 100%;
+            text-align: center;
+            clear: both;
+            overflow: hidden;
+            padding-top: 20px;
+
+            a {
+              display: inline-block;
+              width: 120px;
+              height: 30px;
+              line-height: 30px;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 700;
+              -webkit-border-radius: 15px;
+              -moz-border-radius: 15px;
+              border-radius: 15px;
+              border: 1px solid #fff;
+
+              &:hover {
+                font-size: 15px;
+              }
+            }
+          }
+
+          &:hover {
+            background: url(/public/img/other/service/service-lc-hover.png) no-repeat;
+
+            .feedesc {
+              padding-top: 40px;
+            }
+
+            .feequery {
+              display: block;
+            }
+          }
+        }
+
+        .feepic1 {
+          background: url(/public/img/other/service/service-lc1.png) no-repeat;
+        }
+
+        .feepic2 {
+          background: url(/public/img/other/service/service-lc2.png) no-repeat;
+        }
+
+        .feepic3 {
+          background: url(/public/img/other/service/service-lc3.png) no-repeat;
+        }
+
+        .feepic4 {
+          background: url(/public/img/other/service/service-lc4.png) no-repeat;
+        }
+
+        .feepic5 {
+          background: url(/public/img/other/service/service-lc5.png) no-repeat;
+        }
+
+        .feepic.enddiv {
+          margin-right: 0;
+        }
+      }
+
+      .feeoffer {
+        clear: both;
+        overflow: hidden;
+        padding-top: 50px;
+
+        .feeoffer-img {
+          float: left;
+          width: 380px;
+          height: 230px;
+        }
+
+        .feeoffer-right {
+          width: 620px;
+          float: left;
+          padding: 5px 0 5px 30px;
+          overflow: hidden;
+
+          .feeoffer-title {
+            font-size: 20px;
+            color: #2b2b2b;
+            font-weight: 700;
+          }
+
+          .feeoffer-desc {
+            clear: both;
+            overflow: hidden;
+            padding-top: 15px;
+
+            p {
+              margin-bottom: 5px;
+              line-height: 26px;
+              color: #666;
+              font-size: 14px;
+              clear: both;
+              overflow: hidden;
+
+              em {
+                color: #df183e;
+                font-style: normal;
+              }
+            }
+          }
+
+          .feequery {
+            clear: both;
+            overflow: hidden;
+            padding-top: 7px;
+
+            a {
+              display: inline-block;
+              width: 120px;
+              line-height: 30px;
+              height: 30px;
+              background: #4872d6;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: center;
+              -webkit-border-radius: 15px;
+              -moz-border-radius: 15px;
+              border-radius: 15px;
+
+              &:hover {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .fee-bot1 {
+        clear: both;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+        background: url(/public/img/other/service/service-bot1-pic.png) no-repeat;
+        height: 160px;
+
+        .feequery {
+          position: absolute;
+          left: 500px;
+          top: 96px;
+          z-index: 1;
+
+          a {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            background: #df183e;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+
+            &:hover {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .allquery {
+          width: 100%;
+          height: 160px;
+          position: absolute;
+          cursor: pointer;
+
+          a {
+            width: 100%;
+            display: inline-block;
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+
+  .seniorservice {
+    clear: both;
+    overflow: hidden;
+    padding: 80px 0;
+    background: #f7f7f7;
+
+    h2 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: #272727;
+      text-align: center;
+      margin: 0;
+    }
+
+    .rel1000 {
+      width: 1000px;
+      margin: 0 auto;
+
+      .feelist {
+        clear: both;
+        overflow: hidden;
+        padding-top: 60px;
+
+        .feepic {
+          width: 220px;
+          height: 180px;
+          float: left;
+          margin-right: 40px;
+
+          .feedesc {
+            padding-top: 64px;
+            text-align: center;
+
+            .feedesc-title {
+              font-size: 24px;
+              color: #fff;
+              font-weight: bolder;
+            }
+
+            .feedesc-subtitle {
+              clear: both;
+              overflow: hidden;
+              padding-top: 10px;
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+
+          .feequery {
+            display: none;
+            width: 100%;
+            text-align: center;
+            clear: both;
+            overflow: hidden;
+            padding-top: 20px;
+
+            a {
+              display: inline-block;
+              width: 120px;
+              height: 30px;
+              line-height: 30px;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 700;
+              -webkit-border-radius: 15px;
+              -moz-border-radius: 15px;
+              border-radius: 15px;
+              border: 1px solid #fff;
+
+              &:hover {
+                font-size: 15px;
+              }
+            }
+          }
+
+          &:hover {
+            background: url(/public/img/other/service/service-sv-hover.png) no-repeat;
+
+            .feedesc {
+              padding-top: 40px;
+            }
+
+            .feequery {
+              display: block;
+            }
+          }
+        }
+
+        .feepic1 {
+          background: url(/public/img/other/service/service-sv1.png) no-repeat;
+        }
+
+        .feepic2 {
+          background: url(/public/img/other/service/service-sv2.png) no-repeat;
+        }
+
+        .feepic3 {
+          background: url(/public/img/other/service/service-sv3.png) no-repeat;
+        }
+
+        .feepic4 {
+          background: url(/public/img/other/service/service-sv4.png) no-repeat;
+        }
+
+        .feepic.enddiv {
+          margin-right: 0;
+        }
+      }
+
+      .applyplan-desc {
+        clear: both;
+        overflow: hidden;
+        padding-top: 20px;
+
+        .applyplan-desc-left {
+          padding-top: 10px;
+          float: left;
+          width: 580px;
+
+          .list-dot {
+            clear: both;
+            overflow: hidden;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #272727;
+            font-weight: 700;
+
+            em {
+              display: inline-block;
+              background: #0084ff;
+              width: 4px;
+              height: 4px;
+              margin-right: 5px;
+              margin-top: 7px;
+              float: left;
+            }
+          }
+
+          .listdesc {
+            clear: both;
+            overflow: hidden;
+            padding-top: 10px;
+            padding-left: 9px;
+            color: #606060;
+            font-size: 14px;
+          }
+
+          .markbeizhu {
+            clear: both;
+            overflow: hidden;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #808080;
+
+            em {
+              display: inline-block;
+              color: #ff0202;
+              font-size: 14px;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .applyplan-desc-right {
+          float: right;
+          width: 408px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .fee-bot1 {
+        clear: both;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+        background: url(/public/img/other/service/service-bot2-pic.png) no-repeat;
+        height: 160px;
+
+        .feequery {
+          position: absolute;
+          right: 72px;
+          top: 90px;
+          z-index: 1;
+
+          a {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            background: #4872d6;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+
+            &:hover {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .allquery {
+          width: 100%;
+          height: 160px;
+          position: absolute;
+          cursor: pointer;
+
+          a {
+            width: 100%;
+            display: inline-block;
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.warpbanner {
+  .rel1100 {
+    .querybtn {
+      padding-left: 160px;
+      overflow: hidden;
+
+      .xuanxiaobtn {
+        float: right;
+        display: inline-block;
+
+        .pipei {
+          display: inline-block;
+
+          .modal-btn {
+            display: inline-block;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            color: #000;
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            background: #fff;
+            text-indent: 0;
+            margin-right: 30px;
+
+            &:hover {
+              font-size: 19px;
+              border: none;
+            }
+          }
+        }
+      }
+
+      a {
+        float: right;
+        margin-right: 50px;
+
+        &:hover {
+          font-size: 19px;
+          background: #ee1d44;
+        }
+      }
+    }
+  }
+}
+
+.shunsocity-price {
+  .weixin {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,86 @@
+//------------------
+// andyliang 2016.11.23
+// 右侧浮动层样式表
+//------------------
+.right_flow {
+  position: fixed;
+  display: block;
+  top: 50%;
+  width: 112px;
+  background: #fafafa;
+  right: 10px;
+  margin-top: -180px;
+  z-index: 9999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  .close_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    z-index: 5;
+    background: #969696;
+  }
+
+  .countrylogo {
+    width: 110px;
+    position: relative;
+    border-bottom: 1px solid #d3dee4;
+
+    .img2 {
+      width: 110px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -17px;
+      width: 34px;
+      height: 30px;
+      z-index: 2;
+    }
+  }
+
+  .aabox {
+    width: 100%;
+    overflow: hidden;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 32px;
+      line-height: 32px;
+      overflow: hidden;
+      text-align: center;
+      color: #6f6f6f;
+      font-size: 12px;
+      border-bottom: 1px solid #d3dee4;
+      cursor: pointer;
+    }
+  }
+
+  .phone_layer {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}

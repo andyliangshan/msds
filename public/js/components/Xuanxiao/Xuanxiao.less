@@ -1,0 +1,209 @@
+.modal-btn {
+  border: 1px solid #fff;
+  background-color: #fff;
+  margin-right: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  width: 180px;
+  height: 40px;
+  line-height: 39px;
+  text-align: center;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+}
+
+.xuanxiao-container {
+  display: inline-block;
+  cursor: pointer;
+
+  .modal-dialog {
+    width: 600px !important;
+    margin: 0 auto;
+
+    .modal-content {
+      height: auto;
+
+      .modal-header {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .modal-body {
+        clear: both;
+        padding: 15px 40px;
+        padding-top: 0;
+        position: relative;
+
+        .close {
+          float: right;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 1;
+          color: #000;
+          text-shadow: 0 1px 0 #fff;
+          filter: alpha(opacity=20);
+          opacity: .2;
+        }
+
+        .xuanxiao-form {
+          float: left;
+          clear: both;
+          overflow: hidden;
+          width: 310px;
+          padding: 0 7px 10px;
+
+          h3 {
+            font-size: 18px;
+            line-height: 17px;
+            padding-left: 5px;
+            vertical-align: top;
+            color: #333;
+            border-left: 3px solid #e52e16;
+            margin-bottom: 30px;
+          }
+
+          .xuanxiao-span {
+            line-height: 34px;
+            display: inline-block;
+            float: left;
+            width: 66px;
+            color: #000;
+          }
+
+          .apply-country,
+          .apply-program,
+          .apply-avgs {
+            float: left;
+            width: 110px;
+            border: 1px solid #e3eaee;
+            margin-left: 5px;
+            border-radius: 4px;
+            color: #000;
+            height: 34px;
+            padding: 6px 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            .dropdown-menu {
+              min-width: 110px;
+              line-height: 23px;
+              overflow: scroll;
+              max-height: 200px;
+
+              li {
+                color: #000;
+                padding-left: 12px;
+
+                &:hover {
+                  color: #e52e16;
+                }
+              }
+            }
+
+            .caret {
+              top: 10px;
+              right: 10px;
+              width: 8px;
+              height: 8px;
+            }
+          }
+
+          .apply-avgs {
+            width: 225px;
+
+            .dropdown-menu {
+              width: 225px;
+              line-height: 23px;
+              overflow: scroll;
+              max-height: 140px;
+            }
+          }
+
+          .xuanxiao-input {
+            input {
+              width: 225px;
+              border: 1px solid #e3eaee;
+              height: 34px;
+              padding: 6px 12px;
+              border-radius: 4px;
+              color: #000;
+              margin-left: 5px;
+            }
+          }
+
+          p.modal-tips,
+          p.tooltip {
+            text-align: right;
+            float: right;
+            margin: 0 0 20px;
+            font-size: 14px;
+            color: #7b838e;
+
+            span {
+              img {
+                padding-right: 3px;
+                vertical-align: text-bottom;
+              }
+            }
+          }
+
+          .tooltip-inner {
+            text-align: left;
+            background-color: #333;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .tooltip-arrow {
+            border-color: transparent;
+            border-right-color: #333;
+            left: 1px;
+          }
+
+          .modal-tips {
+            font-size: 14px;
+            float: right;
+            margin: 0 0 20px;
+            text-align: right;
+            color: #7b838e;
+          }
+
+          .btn-default {
+            font-size: 16px;
+            width: 100%;
+            height: 46px;
+            text-align: center;
+            color: #fff;
+            border: 0;
+            background: #e52e16;
+            border-radius: 4px;
+            text-shadow: none;
+            box-shadow: none;
+          }
+        }
+
+        .xuanxiao-text {
+          padding: 20px 0 0 340px;
+
+          h3 {
+            font-size: 18px;
+            line-height: 17px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            padding-left: 5px;
+            vertical-align: top;
+            color: #333;
+            border-left: 3px solid #e52e16;
+          }
+        }
+      }
+    }
+  }
+}

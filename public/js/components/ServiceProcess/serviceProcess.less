@@ -1,0 +1,302 @@
+.serviceProcess {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  .serviceProcess-header {
+    padding-bottom: 44px;
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .serviceProcess-list {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+    .paddingtop {
+      padding-top: 30px;
+    }
+
+    .enddiv {
+      width: 160px;
+    }
+
+    .jiantou-down {
+      position: absolute;
+      top: 42%;
+      right: 0;
+      text-align: right;
+      padding-right: 71px;
+
+      .arrow-box {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .en-style {
+    position: absolute;
+    top: 250px;
+    left: 15%;
+    width: 60%;
+  }
+}
+
+.list-all {
+  display: inline-block;
+  width: 210px;
+  float: left;
+
+  .list-text {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+
+    .radius-box {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .radius {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 149px dotted;
+      // IE7,IE8圆尺寸要小1像素同时有1像素偏移
+      margin: 0 0 1px 1px \0;
+      margin: 0;
+      border-width: 0;
+      color: #cd0000;
+      background-color: #cd0000;
+    }
+
+    span {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      position: relative;
+    }
+
+    p {
+      padding: 25px 0;
+      margin: -11px 0 0 0;
+      width: 160px;
+      height: 86px;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      border: 1px solid #f0f0f0;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        -moz-box-shadow: 0 5px 18px rgba(4, 0, 0, .1);
+        -webkit-box-shadow: 0 5px 18px rgba(4, 0, 0, .1);
+        box-shadow: 0 5px 18px rgba(4, 0, 0, .1);
+      }
+    }
+
+    .oneLine {
+      padding: 0;
+      line-height: 80px;
+    }
+
+    .line3 {
+      padding: 16px 0;
+    }
+  }
+
+  .dayu {
+    margin: 0 19px 20px;
+    vertical-align: -85px;
+  }
+}
+
+.list-hover-content {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid #dacef2;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 20px 0;
+  clear: both;
+  overflow: hidden;
+
+  .hover-text {
+    h3 {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 15px;
+      color: #606060;
+      line-height: 24px;
+
+      a {
+        color: #606060;
+      }
+
+      i {
+        font-style: normal;
+        color: #cd0000;
+      }
+    }
+  }
+
+  .endpp {
+    color: #808080;
+    margin-top: 20px;
+
+    .blackbtn {
+      color: #808080;
+    }
+
+    a.bluebtn {
+      color: #0084ff;
+
+      &:hover {
+        border-bottom: 1px dashed #0084ff;
+      }
+    }
+
+    &:first-child {
+      display: block;
+    }
+  }
+}
+// 箭头
+@allowWidth: 4px;
+
+.arrow-box {
+  width: 50px;
+  height: 115px;
+  position: relative;
+  display: inline-block;
+  // margin-left: 16px;
+}
+
+.common-arrow {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -9px;
+  z-index: 2;/*兼容ie8-*/
+}
+
+.common-direction(@borderWidth: 12px) {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;/*兼容ie8-*/
+  overflow: hidden;
+  border: @borderWidth transparent dashed;
+}
+// 右箭头，兼容IE8
+.right {
+  .common-arrow;
+
+  .arrow1,
+  .arrow2 {
+    .common-direction;
+
+    border-left: 12px white solid;
+  }
+
+  .arrow1 {
+    left: @allowWidth; /*重要*/
+    border-left: 12px #d0d1d7 solid;
+  }
+
+  .arrow2 {
+    border-left: 12px white solid;
+  }
+}
+// 左箭头
+.left {
+  .common-arrow;
+
+  margin-left: -18px;
+
+  .arrow1,
+  .arrow2 {
+    .common-direction;
+
+    border-right: 12px white solid;
+  }
+
+  .arrow1 {
+    border-right: 12px #d0d1d7 solid;
+  }
+
+  .arrow2 {
+    left: @allowWidth;/*重要*/
+    border-right: 12px white solid;
+  }
+}
+
+// 上箭头
+
+.top {
+  .common-arrow;
+
+  .arrow1,
+  .arrow2 {
+    .common-direction;
+
+    border-bottom: 12px white solid;
+  }
+
+  .arrow1 {
+    border-bottom: 12px #d0d1d7 solid;
+  }
+
+  .arrow2 {
+    top: @allowWidth;/*重要*/
+    border-bottom: 12px white solid;
+  }
+}
+
+// 下箭头
+.bottom {
+  .common-arrow;
+
+  .arrow1,
+  .arrow2 {
+    .common-direction;
+
+    border-top: 12px white solid;
+  }
+
+  .arrow1 {
+    top: @allowWidth;/*重要*/
+    border-top: 12px #d0d1d7 solid;
+  }
+
+  .arrow2 {
+    border-top: 12px white solid;
+  }
+}

@@ -1,0 +1,118 @@
+@import './_variables';
+//  ----------------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------------custome mixins--------------------------------------------------
+//  ----------------------------------------------------------------------------------------------------------------
+
+//  ----------------------------
+//  单行省略
+//  ----------------------------
+.text-over-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//  ----------------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------------公共类 start--------------------------------------------------
+//  ----------------------------------------------------------------------------------------------------------------
+
+//  导航默认选中颜色
+.navbar-active {
+  color: @base-color !important;
+}
+
+//  border-bottom: 0;
+.bdb0 {
+  border-bottom: 0 !important;
+}
+
+//  ----------------------------
+//  提取下拉框 顶部的三角符号样式
+//  ----------------------------
+.nav-rotate-span {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-top: 1px solid @slide-border-color;
+  border-left: 1px solid @slide-border-color;
+  transform: rotate(45deg);
+  display: block;
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+  top: -8px;
+  background: white;
+  z-index: 10000;
+  right: 40px;
+}
+
+.caret {
+  position: absolute;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  width: 10px;
+  height: 10px;
+  top: 18px;
+  right: 15px;
+  transform: rotate(45deg);
+  display: block;
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+  z-index: 99;
+}
+
+/* 所有数字 使用的字体类 */
+.number-font-size {
+  font-family: 'Arial';
+}
+
+//模块下的双按钮样式
+.two-button {
+  text-align: center;
+  margin: 40px 0 0;
+
+  p {
+    text-align: center;
+    display: inline-block;
+    background: #ee1d44;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-border-radius: 19.5px;
+    -moz-border-radius: 19.5px;
+    border-radius: 19.5px;
+    behavior: url(/public/pie/PIE.htc);
+    width: 180px;
+    height: 40px;
+    line-height: 39px;
+    cursor: pointer;
+    border: 2px solid #ee1d44;
+
+    a {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #c81839;
+      border-color: #c81839;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  p.po {
+    background-color: #fff;
+    color: #3761d6;
+    border: 2px solid #778fe0;
+    margin-right: 60px;
+
+    &:hover {
+      background-color: #778fe0;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

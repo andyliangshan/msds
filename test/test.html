@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  /**
+   * Promise
+   * 1. 构造函数接收 一个executor函数，这个函数包含了 异步操作的主要代码
+   * 2. executor 接收两个函数 resolve, reject, 用于对 异步操作结束后后的回调
+   */
+
+  class PromiseA {
+
+    constructor(executor) {
+      this.queue = [];
+      this.state = 'pending';
+      //    promise 函数，接收一个executor函数，构造函数引用了连个 内部函数 做代理函数，
+      executor(this._resolve(this), this._reject(this));
+    }
+
+    then(fulfilled, rejected) {
+      const promise = new PromiseA(function(){});
+      promise.queue.push({
+        fulfilled,
+        rejected,
+      });
+      PromiseA.deferred.push(promise);
+      return this;
+    }
+
+    _resolve(self)  {
+      //   私有函数 保存了 this 指针
+      return function(data) {
+        const promise = PromiseA.deferred.shift();
+        promise.state = 'fulfilled';
+        while (promise.queue.length) {
+          const fulfilled = promise.queue.shift().fulfilled;
+          fulfilled(data);
+        }
+      }
+    }
+
+    _reject(self) {
+      return function(err) {
+        self.state = 'rejected';
+        self.rejected(err);
+      }
+    }
+  }
+  PromiseA.deferred = [];
+  //
+  // const readfile = () => new Promise((resovle, reject) => {
+  // });
+
+  /**
+   * Promise
+   * 1. 构造函数接收 一个函数，这个函数包含了 异步操作的主要代码
+   */
+
+  const readfile = function (options) {
+    return new PromiseA(function (resolve, reject) {
+      setTimeout(function(err) {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(1);
+        }
+      }, 1000);
+    });
+  };
+  const readfile2 = function (options) {
+    return new PromiseA(function (resolve, reject) {
+      setTimeout(function(err) {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(2);
+        }
+      }, 1000);
+    });
+  };
+
+
+  readfile().then(function(data) {
+    console.log('1.........', data);
+    readfile2();
+  }, function(err) {
+    console.log(err);
+  }).then(function(data) {
+    console.log('2...........', data);
+  })
+
+</script>
+</body>
+</html>

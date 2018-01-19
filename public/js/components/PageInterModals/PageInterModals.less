@@ -1,0 +1,601 @@
+.baoming-modal {
+  .modal-dialog {
+    width: 508px !important;
+    margin: 5% auto;
+
+    .modal-header {
+      border-bottom: none;
+
+      .close {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        float: none;
+        width: 28px;
+        height: 34px;
+        text-align: center;
+        opacity: 1;
+        border-radius: 5px;
+        background: url(11.png) no-repeat;
+        background-color: #fff;
+        background-position: 5px 5px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0 0 15px;
+
+      h3 {
+        margin: -20px 0 15px;
+      }
+
+      .ceyice-span {
+        font-weight: 500;
+        line-height: 42px;
+        float: left;
+        width: 70px;
+        margin: 0 0 0 55px;
+        padding: 0;
+        text-align: left;
+        color: #000;
+        border: 0;
+        background: 0 0;
+      }
+
+      .ceyice-mobile {
+        //position: absolute;
+        width: 280px;
+        height: 52px;
+        margin-left: 110px;
+      }
+
+      .dropdown-list {
+        float: left;
+        border: 1px solid #317fee;
+        border-radius: 4px;
+        height: 42px;
+        margin-bottom: 10px;
+        width: 323px;
+
+        .div-btn {
+          p {
+            margin: 0;
+            line-height: 42px;
+            padding-left: 10px;
+            color: #000;
+            text-align: left;
+            cursor: pointer;
+          }
+        }
+
+        .dropdown-menu {
+          font-size: 0;
+          zoom: 1;
+          width: 323px;
+          height: 230px;
+          white-space: normal;
+          border: 1px solid #317fee;
+          overflow-x: hidden;
+          overflow-y: auto;
+          min-width: 0;
+          margin: 1px 0 0 -1px;
+
+          li {
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0;
+            text-align: center;
+            color: #888;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+
+            &:hover {
+              color: #317fee;
+            }
+          }
+        }
+      }
+
+      .ceyice-country {
+        .dropdown-menu {
+          padding: 15px 0;
+
+          li {
+            font-size: 16px;
+            line-height: 40px;
+            float: left;
+            width: 79px;
+            padding: 0;
+            text-align: center;
+            color: #888;
+            border-bottom: none;
+
+            &:hover {
+              color: #317fee;
+            }
+          }
+        }
+      }
+
+      .form-group {
+        float: left;
+        width: 323px;
+        border: 1px solid #317fee;
+        border-radius: 4px;
+        height: 42px;
+        line-height: 42px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .ceyice-button {
+        display: block;
+        width: 279px;
+        height: 53px;
+        border: 0;
+        border-radius: 4px;
+        background: url(btn3.jpg) no-repeat center;
+        z-index: 10;
+        margin: 0 auto;
+      }
+
+      .err-tips {
+        color: red;
+        clear: both;
+        text-align: left;
+        padding-left: 125px;
+      }
+    }
+  }
+}
+// 页面强制弹窗 测一测
+.adBg {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 630px;
+  height: 364px;
+  margin-left: -315px;
+  margin-top: -234px;
+  z-index: 999;
+
+  .bg-pic-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+
+    .bg-pic {
+      width: 100%;
+      height: 100%;
+      //position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      z-index: 20;
+    }
+  }
+
+  .ceyice-button {
+    display: inline-block;
+    width: 279px;
+    height: 53px;
+    border: 0;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+
+    .ceyice-container {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      .btn-title {
+        width: 160px;
+        height: 44px;
+        border-radius: 0;
+        background-color: transparent;
+        margin-right: 0;
+        border: none;
+
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .toclose {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    right: 162px;
+    bottom: 28px;
+    height: 46px;
+    width: 158px;
+    z-index: 5;
+  }
+
+  .toclose-hk1 {
+    right: 147px;
+  }
+
+  .toclose-hk2 {
+    bottom: 24px;
+    right: 123px;
+  }
+
+  //.ceyice-custome {
+  //  display: block;
+  //  width: 100%;
+  //  height: 100%;
+  //  cursor: pointer;
+  //}
+
+  .bm1 {
+    display: none;
+  }
+
+  .bg-pic2 {
+    background: url(tp9.png) no-repeat center;
+
+    .baoming-button {
+      position: absolute;
+      top: 238px;
+      width: 100%;
+      left: 0;
+      z-index: 25;
+
+      .baoming-bm {
+        float: left;
+        display: inline-block;
+        width: 60px;
+        height: 25px;
+        cursor: pointer;
+
+        .ceyice-custome {
+          width: 100%;
+          height: 100%;
+
+          .btn-title {
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            background-color: cadetblue;
+            z-index: 9;
+          }
+        }
+      }
+
+      .bm1 {
+        margin-left: 65px;
+      }
+
+      .bm2 {
+        margin-left: 148px;
+      }
+
+      .bm3 {
+        margin-left: 159px;
+      }
+    }
+
+    .toclose {
+      right: 125px;
+      bottom: 38px;
+    }
+  }
+
+  .bg-pic3 {
+    background: url(tphk.png) no-repeat center;
+
+    .toclose {
+      right: 123px;
+      bottom: 26px;
+    }
+  }
+
+  .bg-pic4 {
+    background: url(tp4.png) no-repeat center;
+
+    .bg {
+      bottom: 60px;
+    }
+
+    .toclose {
+      right: 128px;
+      bottom: 58px;
+    }
+  }
+
+  .bg-pichk {
+    background: url(tphk.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .ceyiceMobile-button {
+    background: url(btn2.jpg) no-repeat center;
+    display: inline-block;
+    width: 279px;
+    height: 53px;
+    text-indent: -9999px;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  .bg {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    width: 158px;
+    height: 46px;
+    bottom: 24px;
+    left: 123px;
+  }
+
+  .test-enroll {
+    //position: absolute;
+    display: block;
+    //z-index: 1002;
+    bottom: 26px;
+    left: 138px;
+    width: 158px;
+    height: 46px;
+
+    a {
+      display: block;
+      cursor: pointer;
+      width: 158px;
+      height: 46px;
+    }
+  }
+
+  #ceyiceModal,
+  #baomingModal,
+  #ceyiceModalMobile {
+    .modal-dialog {
+      width: 508px !important;
+
+      .modal-header {
+        border-bottom: none;
+
+        .close {
+          position: absolute;
+          top: -25px;
+          right: 0;
+          float: none;
+          width: 28px;
+          height: 34px;
+          text-align: center;
+          opacity: 1;
+          border-radius: 5px;
+          background: url(11.png) no-repeat;
+          background-color: #fff;
+          background-position: 5px 5px;
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0 0 15px;
+
+      h3 {
+        margin: -15px 0 15px;
+      }
+
+      .ceyice-span {
+        font-weight: 500;
+        line-height: 42px;
+        float: left;
+        width: 85px;
+        padding: 0 0 0 15px;
+        text-align: left;
+        color: #000;
+        border: 0;
+        background: 0 0;
+      }
+
+      .ceyice-mobile {
+        //position: absolute;
+        width: 280px;
+        height: 52px;
+        margin-left: 110px;
+      }
+
+      .dropdown-list {
+        float: left;
+        width: 404px;
+        border: 1px solid #317fee;
+        border-radius: 4px;
+        height: 42px;
+        margin-bottom: 10px;
+
+        .div-btn {
+          p {
+            margin: 0;
+            line-height: 42px;
+            padding-left: 10px;
+            color: #000;
+            text-align: left;
+            cursor: pointer;
+          }
+        }
+
+        .dropdown-menu {
+          font-size: 0;
+          zoom: 1;
+          width: 404px;
+          height: 230px;
+          white-space: normal;
+          border: 1px solid #317fee;
+          overflow-x: hidden;
+          overflow-y: auto;
+          min-width: 0;
+          margin: 1px 0 0 -1px;
+
+          li {
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0;
+            text-align: center;
+            color: #888;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+
+            &:hover {
+              color: #317fee;
+            }
+          }
+        }
+      }
+
+      .ceyice-country {
+        .dropdown-menu {
+          padding: 15px 0;
+
+          li {
+            font-size: 16px;
+            line-height: 40px;
+            float: left;
+            width: 79px;
+            padding: 0;
+            text-align: center;
+            color: #888;
+            border-bottom: none;
+
+            &:hover {
+              color: #317fee;
+            }
+          }
+        }
+      }
+
+      .form-group {
+        float: left;
+        width: 404px;
+        border: 1px solid #317fee;
+        border-radius: 4px;
+        height: 42px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .err-tips {
+        color: red;
+        clear: both;
+        text-align: left;
+        padding-left: 125px;
+      }
+    }
+  }
+}
+
+.cgold .glodCece {
+  background: url(zbtn2.png) no-repeat;
+
+  .ceimg {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .ceyice-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+  }
+
+  .ceyice-modal-btn {
+    text-indent: -9999px;
+    z-index: 5;
+  }
+
+  &:hover {
+    background: url(zbtn2_h.png) no-repeat;
+  }
+}
+
+.cgold .toclose {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #6d532c;
+  border-bottom: 5px solid #4d3718;
+  bottom: 26px;
+
+  img {
+    padding-top: 3px;
+  }
+
+  &:hover {
+    background: #4f3d22;
+    border-bottom: 5px solid #553c16;
+  }
+}
+
+.cgold .bg-pic2 .baoming-button {
+  width: 275px;
+  background: url(zbtn1.png) no-repeat;
+  top: 280px;
+  left: 56px;
+  border-bottom: 5px solid #674d22;
+  -webkit-border-radius: 0 0 11px 11px;
+  -moz-border-radius: 0 0 11px 11px;
+  border-radius: 0 0 11px 11px;
+
+  .yuyue-container {
+    height: 40px;
+  }
+
+  .zhsg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -12px;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  .yuyue-modal-btn {
+    background: none;
+    border: none;
+    text-indent: -9999px;
+    width: 275px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  &:hover {
+    background: url(zbtn1_h.png) no-repeat;
+    border-bottom: 5px solid #795924;
+  }
+}

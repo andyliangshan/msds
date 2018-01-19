@@ -1,0 +1,754 @@
+@import '../_bsCommon';
+@import '../_variables';
+@import '../_noresponse';
+@import '../_mixins';
+
+body {
+  div {
+    font-size: 14px;
+  }
+
+  .banner-title {
+    padding-left: 59px;
+    padding-top: 70px;
+
+    h4,
+    h3 {
+      color: #fff;
+      font-size: 34px;
+      font-weight: bolder;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 60px;
+      margin: 2px 0 22px;
+    }
+
+    .banner-text {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 0;
+
+      img {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 6px;
+      }
+
+      span {
+        margin-right: 15px;
+      }
+    }
+
+    .querybtn {
+      padding-top: 30px !important;
+      padding-left: 0 !important;
+
+      .static-modal {
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+
+  .rel1100 {
+    width: 1100px;
+    margin: 0 auto;
+
+    .rel1100-left {
+      width: 724px;
+      float: left;
+
+      .college-rank {
+        .college-rank-title {
+          padding-top: 70px;
+
+          span {
+            display: block;
+            float: left;
+            width: 35px;
+            margin-right: 5px;
+
+            img {
+              width: 100%;
+              padding-top: 5px;
+            }
+          }
+
+          h2 {
+            color: #57068c;
+            margin: 0;
+          }
+        }
+
+        .college-rank-list {
+          margin-top: 40px;
+
+          .no-margin {
+            margin-right: 0;
+          }
+
+          li {
+            border-radius: 10px;
+            //behavior: url(/public/pie/PIE.htc);
+            position: relative;
+            width: 220px;
+            float: left;
+            margin-right: 32px;
+
+            img {
+              width: 220px;
+            }
+
+            .profession-name {
+              /* stylelint-disable */
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              background-color: #fff;
+              filter: Alpha(opacity=94);
+              background-color: rgba(255, 255, 255, 0.94);
+              //behavior: url(/public/pie/backgroundsize.min.htc);
+              border: 1px solid @global-border-color;
+              behavior: url(/public/pie/PIE.htc);
+              border-radius: 0 0 9px 9px;
+              height: 64px;
+              overflow: hidden;
+              /* stylelint-enable */
+
+              h3 {
+                font-size: 26px;
+                font-weight: bold;
+                color: #ee1d44;
+                margin: 0;
+                line-height: 64px;
+                padding-left: 8px;
+                float: left;
+
+                small {
+                  font-size: 16px;
+                  color: #ee1d44;
+                  font-weight: bold;
+                }
+              }
+
+              p {
+                color: #3b58a8;
+                font-size: 14px;
+                behavior: url(/public/pie/PIE.htc);
+                z-index: 1;
+                font-weight: 700;
+                width: 73%;
+                display: table-cell;
+                vertical-align: middle;
+                height: 64px;
+              }
+
+              .tow-line {
+                line-height: 18px;
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+
+        .college-rank-button {
+          p.po {
+            color: #606b81;
+            border-color: #bfc4cd;
+
+            a {
+              color: #606b81;
+            }
+
+            &:hover {
+              background-color: #bfc4cd;
+
+              a {
+                color: #fff;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .college-fee {
+        .college-fee-title {
+          padding-top: 45px;
+
+          span {
+            display: block;
+            float: left;
+            width: 35px;
+            margin-right: 5px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          h2 {
+            color: #1fc579;
+            margin: 0;
+            margin-top: 7px;
+          }
+        }
+
+        .college-fee-list {
+          li {
+            .profession-name {
+              p {
+                float: left;
+                line-height: 18px;
+                padding-left: 8px !important;
+                width: 80%;
+                font-size: 15px;
+                padding-top: 10px;
+              }
+
+              h3 {
+                float: none;
+                position: absolute;
+                bottom: 10px;
+                right: 8px;
+                line-height: 18px;
+                padding-left: 0;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+
+      .college-profession {
+        margin-bottom: 70px;
+
+        .college-profession-title {
+          padding-top: 45px;
+
+          h2 {
+            color: #f24d12;
+            margin-top: 4px;
+          }
+
+          span {
+            width: auto;
+
+            img {
+              padding-top: 0;
+            }
+          }
+        }
+
+        .college-profession-list {
+          li {
+            .profession-name {
+              text-align: center;
+
+              p {
+                float: none;
+                line-height: 64px;
+                width: 100%;
+                display: block;
+              }
+
+              .first-hide {
+                display: none;
+              }
+            }
+
+            &:hover {
+              .profession-name {
+                border-radius: 9px;
+                behavior: url(/public/pie/PIE.htc);
+                height: 100%;
+                transition: all 0.5s;
+
+                .first-show {
+                  display: none;
+                }
+
+                .first-hide {
+                  display: block;
+
+                  a {
+                    display: block;
+                    line-height: 158px;
+                    font-size: 16px;
+                    color: #3b58a8;
+
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rel1100-right {
+      width: 350px;
+      float: right;
+      margin-top: 70px;
+
+      .two-button {
+        text-align: center;
+        margin: 30px 0 0;
+      }
+
+      h2 {
+        font-weight: bolder;
+        font-size: 18px;
+        display: inline-block;
+        margin-bottom: 17px;
+        margin-top: 0;
+        color: #000;
+        padding: 0 0 0 5px;
+        border-bottom: 0;
+        border-left: 4px solid #ee1d44;
+      }
+
+      .related-search {
+        .mid-time-titlecolor {
+          display: block;
+          height: 6px;
+          background-color: #57068c;
+        }
+
+        .related-search-list {
+          //height: 96px;
+          border: 1px solid @global-border-color;
+          padding: 0 20px 15px;
+
+          li {
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 15px;
+            width: 50%;
+            float: left;
+
+            a {
+              color: #000;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .latest-admission {
+        margin-top: 30px;
+
+        .latest-admission-list {
+          margin-bottom: 16px;
+
+          .latest-admission-top {
+            border: 1px solid @global-border-color;
+            border-bottom: none;
+
+            .latest-admission-title {
+              height: 98px;
+              background-color: #f2f6f8;
+
+              img {
+                width: 78px;
+                height: 78px;
+                border-radius: 50%;
+                margin: 10px 0 0 15px;
+                float: left;
+              }
+
+              .latest-admission-text {
+                float: left;
+                padding-left: 15px;
+                position: relative;
+                width: 73%;
+
+                h3 {
+                  margin-top: 0;
+                  padding-top: 20px;
+                  font-size: 20px;
+                  margin-bottom: 16px;
+                  font-weight: bold;
+                }
+
+                .text-over-ellipsis {
+                  color: #7b838e;
+                  width: 60%;
+                }
+
+                .eye-icon {
+                  color: #3b58a8;
+                  font-weight: bold;
+                  position: absolute;
+                  bottom: 0;
+                  right: 10px;
+                  cursor: pointer;
+
+                  img {
+                    width: 18px;
+                    height: 12px;
+                    margin: 3px 3px 0 0;
+                  }
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+
+            .offer-introduction {
+              padding-bottom: 5px;
+
+              .offer-introduction-left,
+              .offer-introduction-right {
+                float: left;
+                overflow: hidden;
+              }
+
+              .offer-introduction-left {
+                padding: 0 40px;
+                max-width: 52%;
+              }
+
+              h3 {
+                color: #383d49;
+                font-size: 18px;
+                margin: 13px 0 6px;
+              }
+
+              p {
+                color: #333;
+                font-size: 14px;
+                margin-bottom: 1px;
+                height: 22px;
+                overflow: hidden;
+              }
+            }
+          }
+
+          .semicircle {
+            position: relative;
+
+            .left-circle {
+              width: 5px;
+              height: 10px;
+              border-radius: 0 10px 10px 0;
+              behavior: url(/public/pie/PIE.htc);
+              border-top: 1px solid @global-border-color;
+              border-bottom: 1px solid @global-border-color;
+              border-right: 1px solid @global-border-color;
+              display: inline-block;
+              float: left;
+            }
+
+            .dotted-line {
+              width: 92%;
+              height: 5px;
+              border-bottom: 1px dashed @global-border-color;
+              display: inline-block;
+              margin: 0 2% 9px;
+            }
+
+            .right-circle {
+              width: 5px;
+              height: 10px;
+              border-radius: 10px 0 0 10px;
+              behavior: url(/public/pie/PIE.htc);
+              border-top: 1px solid @global-border-color;
+              border-bottom: 1px solid @global-border-color;
+              border-left: 1px solid @global-border-color;
+              display: inline-block;
+              float: right;
+            }
+          }
+
+          .latest-admission-bottom {
+            border: 1px solid @global-border-color;
+            border-top: none;
+            margin-top: -10px;
+
+            .consultant-name {
+              float: left;
+
+              img {
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                margin: 13px 10px 13px 15px;
+                behavior: url(/public/pie/PIE.htc);
+                float: left;
+              }
+
+              h3 {
+                float: left;
+                color: #383d49;
+                font-size: 18px;
+                margin-top: 32px;
+              }
+            }
+
+            .admission-two-button {
+              margin-top: 26px;
+              margin-right: 10px;
+              float: right;
+
+              .two-button-yuyue,
+              .yuyue-modal-btn {
+                width: 88px;
+                height: 27px;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                display: inline-block;
+                background: #ee1d44;
+                color: #fff;
+                font-weight: 500;
+                border-radius: 19.5px;
+                behavior: url(/public/pie/PIE.htc);
+                cursor: pointer;
+                border: 2px solid #ee1d44;
+                margin-right: 0;
+
+                a {
+                  color: #fff;
+                }
+
+                &:hover {
+                  background-color: #c81839;
+                  border: 2px solid #c81839;
+
+                  a {
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              .yuyue-modal-btn {
+                line-height: 24px;
+                margin-right: 7px;
+                color: #606b81;
+                border-color: #bfc4cd;
+                background-color: #fff;
+
+                &:hover {
+                  background-color: #bfc4cd;
+                  color: #fff;
+                  border-color: #bfc4cd;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ivy-school {
+      .ivy-school-title {
+        padding-top: 70px;
+
+        span {
+          display: block;
+          float: left;
+          width: 39px;
+          height: 30px;
+          margin-right: 5px;
+
+          img {
+            width: 100%;
+            vertical-align: text-bottom;
+          }
+        }
+
+        h2 {
+          color: #1fc579;
+          margin: 0;
+        }
+      }
+
+      .ivy-school-list {
+        padding-top: 40px;
+
+        .first-li {
+          margin-left: 20px;
+        }
+
+        li {
+          border: 1px solid @global-border-color;
+          border-radius: 10px;
+          behavior: url(/public/pie/PIE.htc);
+          position: relative;
+          width: 130px;
+          height: 130px;
+          float: left;
+          margin-left: 25px;
+          overflow: hidden;
+
+          &:hover {
+            //border: 1px solid #3acc89;
+            img {
+              -webkit-transform: matrix(1.04, 0, 0, 1.04, 0, 0);
+              transform: matriX(1.04, 0, 0, 1.04, 0, 0);
+            }
+          }
+
+          img {
+            width: 128px;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            display: block;
+          }
+
+          p {
+            position: absolute;
+            background-color: #1fc579;
+            line-height: 40px;
+            color: #fff;
+            font-size: 17px;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            border-radius: 0 0 9px 9px;
+            behavior: url(/public/pie/PIE.htc);
+            z-index: 0;
+            font-weight: bold;
+          }
+
+          a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .rel1920 {
+    background-color: #f7f7f7;
+
+    .rel1100 {
+      width: 1100px;
+      margin: 0 auto;
+
+      .hot-school {
+        margin-top: 70px;
+        padding-bottom: 60px;
+
+        .hot-school-title {
+          padding-top: 70px;
+
+          span {
+            display: block;
+            float: left;
+            height: 30px;
+            margin: 0 8px 0 4px;
+
+            img {
+              width: 100%;
+              vertical-align: text-bottom;
+            }
+          }
+
+          h2 {
+            color: #ff4200;
+            margin: 0;
+            padding-top: 3px;
+          }
+        }
+
+        .hot-school-list {
+          margin-bottom: 0;
+
+          li {
+            p {
+              background-color: rgba(233, 240, 244, .88);
+              color: #333;
+            }
+          }
+        }
+
+        .hot-school-buttoon {
+          text-align: center;
+          margin: 40px 0 0;
+
+          p {
+            text-align: center;
+            display: inline-block;
+            background-color: #ee1d44;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            -webkit-border-radius: 19.5px;
+            -moz-border-radius: 19.5px;
+            border-radius: 19.5px;
+            width: 180px;
+            height: 40px;
+            line-height: 39px;
+            cursor: pointer;
+
+            a {
+              color: #fff;
+            }
+
+            &:hover {
+              background-color: #c81839;
+
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+
+          p.po {
+            background-color: #f7f7f7;
+            color: #778fe0;
+            border: 2px solid #778fe0;
+            margin-right: 60px;
+
+            a {
+              color: #778fe0;
+            }
+
+            &:hover {
+              background-color: #778fe0;
+
+              a {
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #offer-image {
+    .modal-dialog {
+      width: 600px !important;
+      margin: 30px auto;
+
+      .modal-content {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

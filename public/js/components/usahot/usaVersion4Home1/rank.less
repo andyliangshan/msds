@@ -1,0 +1,224 @@
+.usaV4H1-rank {
+  position: relative;
+  overflow: hidden;
+  height: 425px;
+
+  .rank-wraper {
+    width: 1000px;
+    height: 425px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: width .4s;
+    position: absolute;
+
+    .rank-title {
+      width: 15%;
+    }
+
+    .rank-name {
+      width: 30%;
+    }
+
+    .rank-offer {
+      width: 35%;
+    }
+
+    .rank-shun {
+      width: 20%;
+    }
+
+    .rank-head {
+      padding: 0 20px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      background: #f8f7f7;
+      text-align: center;
+
+      .rank-shun {
+        width: 17%;
+      }
+    }
+
+    .rankbody-box {
+      height: 395px;
+      overflow-y: auto;
+    }
+
+    .rank-body {
+      padding: 0 20px;
+
+      li {
+        height: 51px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 51px;
+        border-bottom: 1px solid #ebf1f4;
+      }
+
+      .one {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #a7aec6;
+      }
+
+      .rank-first {
+        color: #ff4a2c;
+      }
+
+      .rank-second {
+        color: #ff8a2b;
+      }
+
+      .rank-third {
+        color: #ffbb36;
+      }
+
+      .two {
+        strong,
+        span {
+          display: block;
+          line-height: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        strong {
+          height: 24px;
+          line-height: 24px;
+          margin-top: 5px;
+        }
+
+        span {
+          color: #8f999c;
+        }
+      }
+
+      .three {
+        .rank-test {
+          display: inline;
+          margin-right: 20px;
+        }
+      }
+
+      .four {
+        text-align: center;
+
+        .shun-inner {
+          display: inline-block;
+          width: 77px;
+          height: 26px;
+          line-height: 26px;
+          border: 1px solid #b2b2c8;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+
+        .hover-case {
+          background: #f7f8fa;
+        }
+
+        .detail-active {
+          border-color: #3298fa;
+          background: #3298fa;
+          color: #fff;
+        }
+      }
+
+      .first {
+        color: #ff4a2c;
+      }
+
+      .second {
+        color: #ff8a2b;
+      }
+
+      .third {
+        color: #ffd288;
+      }
+    }
+  }
+
+  .case-detail {
+    position: absolute;
+    right: -290px;
+    top: 0;
+    width: 286px;
+    height: 425px;
+    border: 1px solid #1c8dfa;
+    transition: right .4s;
+
+    .case-title {
+      text-align: center;
+      height: 32px;
+      line-height: 32px;
+      background: #3298fa;
+      color: #fff;
+    }
+
+    .case-info {
+      padding: 6px 15px 10px 20px;
+      font-size: 14px;
+      line-height: 22px;
+      position: relative;
+      height: 393px;
+
+      .each-case {
+        margin-bottom: 11px;
+      }
+
+      .no-case {
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+      }
+
+      .last-case {
+        margin-bottom: 1px;
+      }
+
+      .case-name {
+        font-weight: bold;
+      }
+
+      .case-profession,
+      .case-score,
+      .case-school {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .advisor-name {
+        color: #1c8dfa;
+      }
+    }
+
+    .case-contrast {
+      position: absolute;
+      right: 15px;
+      text-align: right;
+      bottom: 10px;
+    }
+  }
+
+  // .enter {
+  //   right: -280px;
+  // }
+
+  // .enterActive {
+  //   right: 0;
+  // }
+
+  .leave {
+    right: 0;
+  }
+
+  .leaveActive {
+    right: -280px;
+    transition: right .4s;
+  }
+}

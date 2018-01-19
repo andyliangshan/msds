@@ -1,0 +1,160 @@
+.center(@width: 1000px) {
+  width: @width;
+  margin: 0 auto;
+}
+
+.allow(@size: 5px) {
+  border: @size solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -@size/2;
+  content: ' ';
+}
+
+@white: #fff;
+@colorDeepGray: #333;
+@colorRed: #d8434f;
+@hoverSubmit: #c8303c;
+@fz18: 18px;
+@fz14: 14px;
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.banner-content {
+  .center();
+
+  height: 380px;
+  padding-top: 230px;
+
+  .banner-test {
+    .center(890px);
+
+    height: 108px;
+    padding: 20px 40px 0;
+    background: rgba(0, 0, 0, 0.54);
+    // filter: alpha(opacity=54);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#7F000000', endcolorstr='#7F000000');
+    color: @white;
+
+    .bannerform-top {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+
+      .big-title {
+        font-size: @fz18;
+      }
+
+      .line {
+        width: 2px;
+        height: 18px;
+        background: @white;
+        margin: 0 20px;
+      }
+
+      .shit {
+        color: #ffba00;
+        padding: 0 5px;
+      }
+    }
+
+    .form-banner {
+      height: 37px;
+      line-height: 37px;
+      position: relative;
+
+      .one-font {
+        position: absolute;
+        left: 4px;
+        top: 0;
+        z-index: 1;
+        color: #000;
+        font-size: 16px;
+      }
+
+      .select-box {
+        width: 256px;
+        position: relative;
+      }
+
+      .select {
+        width: 256px;
+        height: 100%;
+        background: @white;
+        color: @colorDeepGray;
+        padding-left: 20px;
+        cursor: pointer;
+        position: relative;
+
+        span {
+          margin-right: 8px;
+        }
+
+        .allow-down {
+          .allow(5px);
+
+          border-top: 5px solid #5c5c5c;
+          // top: 17px;
+          right: 14px;
+          cursor: pointer;
+        }
+
+        .allow-up {
+          .allow(5px);
+
+          border-bottom: 5px solid #5c5c5c;
+          top: 12px;
+          right: 14px;
+          cursor: pointer;
+        }
+      }
+
+      .tel-wraper {
+        width: 374px;
+        height: 100%;
+        margin: 0 13px;
+        position: relative;
+
+        span {
+          position: absolute;
+        }
+      }
+
+      input {
+        height: 37px;
+        line-height: 37px;
+        padding-left: 20px;
+        width: 100%;
+        // background: @white;
+        color: @colorDeepGray;
+      }
+
+      .error {
+        min-width: 120px;
+        position: absolute;
+        right: 10px;
+        color: @colorRed;
+      }
+
+      .submit {
+        width: 150px;
+        text-align: center;
+        height: 100%;
+        background: @colorRed;
+        cursor: pointer;
+
+        &:hover {
+          background: @hoverSubmit;
+        }
+      }
+    }
+  }
+}

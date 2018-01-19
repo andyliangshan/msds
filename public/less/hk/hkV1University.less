@@ -1,0 +1,1162 @@
+@import '../_bsCommon';
+@import '../_variables';
+@import '../_noresponse';
+@import '../_mixins';
+
+body {
+  * {
+    font-family: '微软雅黑' !important;
+  }
+}
+// 变量
+@white: #fff;
+@colorDeepGray: #333;
+@colorRed: #d8434f;
+@hoverSubmit: #c8303c;
+@fz18: 18px;
+@fz14: 14px;
+// 混合
+.center(@width: 1000px) {
+  width: @width;
+  margin: 0 auto;
+}
+
+.allow(@size: 5px) {
+  border: @size solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -@size/2;
+  content: ' ';
+}
+
+// pubilc && resize
+input,
+button,
+textarea {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #333;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.wd1000 {
+  .center();
+}
+
+#hkFam {
+  .shunts-6 {
+    margin-right: 35px;
+    background: #f4f4f4;
+    border-radius: 10px;
+
+    p {
+      font-size: 16px;
+      color: #606060;
+      line-height: 47px;
+    }
+
+    .showBigpic {
+      padding: 20px 20px 0;
+
+      img {
+        width: 270px;
+      }
+    }
+  }
+
+  .shunsocity-linebox,
+  .shunsocity-linebox-tese,
+  .shunsocity-linebox-weixin {
+    display: none;
+  }
+
+  .botform-Conable {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .meitilist {
+    margin: 0 15px 35px 0;
+  }
+
+  .hovertext {
+    padding-top: 60px;
+  }
+
+  .weixin {
+    display: none;
+  }
+
+  .yuyue-modal-btn {
+    border-radius: 5px;
+    background: @colorRed;
+
+    &:hover {
+      background: @hoverSubmit;
+    }
+  }
+
+  .botform-Conable {
+    background: url(/public/img/hk/v1/university/bottom_bg.png) no-repeat;
+  }
+
+  .redbtn {
+    border-radius: 6px;
+    background: @colorRed;
+
+    &:hover {
+      background: #c8303c;
+    }
+  }
+
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+  }
+
+  .slick-arrow::before {
+    content: '';
+  }
+
+  .slick-prev {
+    background: url(/public/img/hk/v1/university/left.png) no-repeat;
+    left: -40px;
+  }
+
+  .slick-next {
+    background: url(/public/img/hk/v1/university/right.png) no-repeat;
+    right: -40px;
+  }
+
+  .school-instr-sider {
+    text-align: left;
+  }
+}
+
+.banner-content {
+  .center();
+
+  height: 380px;
+  padding-top: 230px;
+
+  .banner-test {
+    .center(890px);
+
+    height: 108px;
+    padding: 20px 40px 0;
+    background: rgba(0, 0, 0, 0.54);
+    // filter: alpha(opacity=54);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#7F000000', endcolorstr='#7F000000');
+    color: @white;
+
+    .bannerform-top {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+
+      .big-title {
+        font-size: @fz18;
+      }
+
+      .line {
+        width: 2px;
+        height: 18px;
+        background: @white;
+        margin: 0 20px;
+      }
+
+      .shit {
+        color: #ffba00;
+        padding: 0 5px;
+      }
+    }
+
+    .form-banner {
+      height: 37px;
+      line-height: 37px;
+      position: relative;
+
+      .one-font {
+        position: absolute;
+        left: 4px;
+        top: 0;
+        z-index: 1;
+        color: #000;
+        font-size: 16px;
+      }
+
+      .select-box {
+        width: 256px;
+        position: relative;
+      }
+
+      .select {
+        width: 256px;
+        height: 100%;
+        background: @white;
+        color: @colorDeepGray;
+        padding-left: 20px;
+        cursor: pointer;
+        position: relative;
+
+        span {
+          margin-right: 8px;
+        }
+
+        .allow-down {
+          .allow(5px);
+
+          border-top: 5px solid #5c5c5c;
+          // top: 17px;
+          right: 14px;
+          cursor: pointer;
+        }
+
+        .allow-up {
+          .allow(5px);
+
+          border-bottom: 5px solid #5c5c5c;
+          top: 12px;
+          right: 14px;
+          cursor: pointer;
+        }
+      }
+
+      .tel-wraper {
+        width: 374px;
+        height: 100%;
+        margin: 0 13px;
+        position: relative;
+
+        span {
+          position: absolute;
+        }
+      }
+
+      input {
+        height: 37px;
+        line-height: 37px;
+        padding-left: 20px;
+        width: 100%;
+        // background: @white;
+        color: @colorDeepGray;
+      }
+
+      .error {
+        min-width: 120px;
+        position: absolute;
+        right: 10px;
+        color: @colorRed;
+      }
+
+      .submit {
+        width: 150px;
+        text-align: center;
+        height: 100%;
+        background: @colorRed;
+        cursor: pointer;
+
+        &:hover {
+          background: @hoverSubmit;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  .nav-wraper {
+    width: 100%;
+    height: 51px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #f1f4f6;
+  }
+
+  .nav {
+    position: relative;
+
+    .select-unversity {
+      width: 196px;
+      height: 50px;
+      background: @colorRed;
+      color: @white;
+      // padding-left: 30px;
+      position: relative;
+      cursor: pointer;
+
+      a,
+      span {
+        display: inline-block;
+      }
+
+      span {
+        font-size: @fz18;
+        height: 100%;
+        margin: 0 10px 0 8px;
+      }
+
+      .logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: @colorRed;
+        vertical-align: -11px;
+
+        img {
+          width: 100%;
+          vertical-align: baseline;
+        }
+      }
+
+      .allow-down {
+        .allow(5px);
+
+        position: relative;
+        border-top: 5px solid @white;
+        margin-bottom: 23px;
+        // right: 30px;
+        // cursor: pointer;
+      }
+
+      &:hover {
+        .university-list {
+          display: block;
+        }
+      }
+    }
+
+    .university-list {
+      display: none;
+      width: 196px;
+      text-align: center;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      border: 1px solid #d1d1d1;
+      padding: 10px 0;
+      background: @white;
+
+      li {
+        cursor: pointer;
+        line-height: 30px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            color: @colorRed;
+          }
+        }
+      }
+    }
+
+    .nav-list {
+      li {
+        float: left;
+        padding: 0 40px;
+
+        span {
+          display: block;
+          height: 50px;
+          font-size: 16px;
+          font-weight: bold;
+          color: @colorDeepGray;
+          padding: 0 10px;
+          cursor: pointer;
+
+          &:hover {
+            color: @colorRed;
+          }
+        }
+
+        .active {
+          color: @colorRed;
+          border-bottom: 3px solid @colorRed;
+        }
+      }
+
+      .last-nav {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// content pubilc
+.content-common {
+  padding-top: 80px;
+
+  .title {
+    text-align: center;
+
+    h3 {
+      font-size: 30px;
+      height: 30px;
+      font-weight: bolder;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .title-desc {
+      color: @colorRed;
+    }
+
+    .title-icon {
+      height: 14px;
+      line-height: 1;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+// 排名
+.rank {
+  .rank-info {
+    padding: 45px 0 80px;
+    text-align: center;
+  }
+
+  .rank-list {
+    padding-left: 45px;
+
+    li {
+      float: left;
+      width: 180px;
+      height: 192px;
+      padding: 63px 10px 0;
+      margin-right: 65px;
+      background: url(/public/img/hk/v1/university/rank_box.png) no-repeat;
+    }
+
+    .rank-number {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: bolder;
+      color: @colorRed;
+      line-height: 36px;
+      margin-bottom: 8px;
+    }
+
+    .rank-range {
+      font-size: 14px;
+      line-height: 20px;
+      color: #07324e;
+    }
+  }
+
+  .rank-test {
+    width: 180px;
+    height: 180px;
+    margin-top: 16px;
+    line-height: 180px;
+    font-size: 17px;
+    color: #0079f4;
+    font-weight: bold;
+    cursor: pointer;
+    background: url(/public/img/hk/v1/university/rank_last.png) no-repeat;
+
+    &:hover {
+      // background: #fff;
+      color: #0057b0;
+    }
+  }
+}
+
+//admission
+.admission {
+  background: #f4f4f4;
+  padding-bottom: 60px;
+
+  .conditon-info {
+    padding-top: 50px;
+
+    .program {
+      li {
+        width: 475px;
+        height: 230px;
+        padding: 30px 40px 0 25px;
+        background: #fff;
+      }
+
+      h4 {
+        height: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: @colorDeepGray;
+        margin-bottom: 23px;
+        line-height: 1;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        height: 90px;
+        color: #666;
+
+        .ps {
+          color: @colorRed;
+        }
+      }
+
+      .live-hk {
+        display: block;
+        width: 160px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        background: @colorRed;
+        color: @white;
+        border-radius: 3px;
+        margin-left: 5px;
+
+        &:hover {
+          background: @hoverSubmit;
+        }
+      }
+    }
+
+    .condition {
+      .master {
+        padding: 50px 0 10px;
+      }
+
+      h4 {
+        height: 20px;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: bolder;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .condition-list {
+        li {
+          font-size: 0;
+          margin-bottom: 10px;
+        }
+
+        span {
+          display: inline-block;
+          height: 14px;
+          font-size: 14px;
+          line-height: 1;
+          color: #666;
+        }
+
+        .circle {
+          width: 10px;
+          height: 10px;
+          border: 2px solid @colorRed;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// case
+.case {
+  padding-bottom: 75px;
+
+  .case-content {
+    padding-top: 50px;
+
+    .list-box {
+      position: relative;
+
+      .prev,
+      .next {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        margin-top: -20px;
+        cursor: pointer;
+      }
+
+      .prev {
+        background: url(/public/img/hk/v1/university/left.png) no-repeat;
+        left: -55px;
+      }
+
+      .next {
+        background: url(/public/img/hk/v1/university/right.png) no-repeat;
+        right: -55px;
+      }
+    }
+
+    .slick-box {
+      width: 1000px;
+      height: 370px;
+      //overflow: hidden;
+    }
+
+    .case-list {
+      min-width: 1000px;
+
+      .item {
+        float: left;
+        width: 229px;
+        height: 370px;
+        padding: 20px 0 0 23px;
+        border: 1px solid #eaeaea;
+        position: relative;
+        margin: 0 10px;
+      }
+
+      .mr0 {
+        margin-right: 0;
+      }
+
+      .item-title {
+        text-align: center;
+        width: 229px;
+        margin-left: -23px;
+
+        h4 {
+          font-size: 20px;
+          height: 20px;
+          line-height: 1;
+          color: #333;
+          font-weight: bold;
+        }
+
+        .title-line {
+          display: inline-block;
+          width: 34px;
+          height: 3px;
+          background: @colorRed;
+        }
+      }
+
+      .student-info {
+        font-size: 14px;
+        line-height: 25px;
+        color: #686866;
+
+        .common-mg {
+          margin-bottom: 12px;
+        }
+      }
+
+      .teacher-info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 46px;
+        background: #f5f5f5;
+        padding-left: 5px;
+
+        .avatar {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          margin-top: 5px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .name {
+          font-size: 15px;
+          font-weight: bold;
+          color: #333;
+          line-height: 46px;
+          margin: 0 22px 0 10px;
+        }
+
+        .live {
+          width: 66px;
+          height: 24px;
+          border: 1px solid @colorRed;
+          border-radius: 3px;
+          color: @colorRed;
+          text-align: center;
+          font-size: 13px;
+          line-height: 24px;
+          margin-top: 11px;
+          background: #f5f5f5;
+
+          &:hover {
+            background: @hoverSubmit;
+            color: @white;
+          }
+        }
+      }
+    }
+
+    .live {
+      width: 100%;
+      height: 160px;
+      background: url(/public/img/hk/v1/university/link.png) no-repeat;
+      position: relative;
+      margin-top: 80px;
+
+      .live-case {
+        position: absolute;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        background: @colorRed;
+        line-height: 30px;
+        font-size: 15px;
+        color: @white;
+        left: 45px;
+        bottom: 22px;
+        border-radius: 3px;
+
+        &:hover {
+          background: @hoverSubmit;
+        }
+      }
+    }
+  }
+}
+// 热门专业推荐
+.recommend {
+  background: #f4f4f4;
+  padding-bottom: 80px;
+
+  .recommend-info {
+    padding-top: 50px;
+
+    .profession-img {
+      width: 400px;
+      height: 332px;
+      background-image: url(/public/img/hk/v1/university/profession.png);
+      background-repeat: no-repeat;
+      margin-right: 20px;
+
+      li {
+        width: 180px;
+        height: 97px;
+        float: left;
+        margin: 0 20px 20px 0;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .recomend-info {
+      width: 578px;
+      height: 332px;
+      position: relative;
+
+      .content {
+        margin-bottom: 45px;
+      }
+
+      .master {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 20px;
+        height: 20px;
+        line-height: 1;
+        color: @colorDeepGray;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #666;
+
+        .time {
+          color: @colorRed;
+        }
+      }
+
+      .live-recomend {
+        position: absolute;
+        width: 140px;
+        height: 36px;
+        text-align: center;
+        background: @colorRed;
+        color: @white;
+        line-height: 36px;
+        border-radius: 3px;
+        left: 0;
+        bottom: 0;
+
+        &:hover {
+          background: @hoverSubmit;
+        }
+      }
+    }
+  }
+}
+
+// 优势
+.advantage {
+  .advantage-content {
+    padding-top: 50px;
+  }
+
+  .teacher {
+    .teacher-title {
+      text-align: left;
+    }
+  }
+
+  .ex-title {
+    line-height: 1;
+    margin-bottom: 30px;
+
+    h4 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+
+  .shunsocity-price {
+    h2 {
+      font-size: 22px;
+      text-align: left;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .shunsocity-price-subtitle {
+      font-size: 14px;
+      text-align: left;
+      color: #606060;
+      line-height: 1;
+    }
+  }
+
+  .crp-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+
+    .live800 {
+      position: absolute;
+      bottom: 0;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+}
+//CRP
+.crp {
+  width: 1000px;
+  margin: 0 auto;
+
+  .pd30 {
+    padding-right: 0 !important;
+    position: relative;
+
+    .fservice {
+      padding-top: 50px;
+      overflow: hidden;
+
+      h2 {
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 0;
+        margin-right: 50px;
+        position: absolute;
+        top: 70px;
+      }
+
+      .fs-left {
+        padding-left: 0;
+        padding-top: 75px;
+        float: left;
+        position: relative;
+
+        .live-crp {
+          position: absolute;
+          width: 238px;
+          height: 36px;
+          background: @colorRed;
+          color: @white;
+          text-align: center;
+          line-height: 36px;
+          border-radius: 5px;
+          bottom: -55px;
+          left: 0;
+
+          &:hover {
+            background: @hoverSubmit;
+          }
+        }
+
+        .l-top {
+          p {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: bolder;
+            color: #272727;
+            margin-bottom: 15px;
+
+            em {
+              width: 4px;
+              height: 4px;
+              background-color: #0084ff;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 6px;
+            }
+          }
+
+          .spe {
+            margin-left: 10px;
+            color: #606060;
+            font-weight: normal;
+          }
+        }
+
+        .xuehua {
+          line-height: 14px;
+          color: #808080;
+          display: inline-block;
+          margin: 0;
+          padding-top: 5px;
+
+          img {
+            width: 7px;
+            height: 7px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 4px;
+            margin-top: 3px;
+          }
+        }
+      }
+
+      .fs-right {
+        float: left;
+        margin-right: -50px;
+
+        img {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//info
+.info {
+  width: 1000px;
+  margin: 0 auto;
+
+  .servicestudent-box {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 80px;
+
+    .servicestudent-img {
+      float: left;
+      width: 408px;
+
+      img {
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+
+    .servicestudent-con {
+      float: left;
+      width: 592px;
+      padding: 0 0 0 45px;
+      height: 212px;
+      position: relative;
+
+      .servicestudent-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .servicestudent-desc {
+        clear: both;
+        overflow: hidden;
+        padding-top: 15px;
+
+        .first-desc {
+          margin: 15px 0;
+        }
+
+        p {
+          line-height: 26px;
+          margin: 0;
+          clear: both;
+          overflow: hidden;
+          color: #606060;
+
+          em {
+            display: inline-block;
+            font-style: normal;
+            width: 5px;
+            height: 5px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: #a4a5ab;
+            float: left;
+            vertical-align: middle;
+            margin-top: 10px;
+          }
+
+          span {
+            display: inline-block;
+            float: left;
+            width: 506px;
+            margin-left: 5px;
+          }
+        }
+
+        i {
+          font-style: normal;
+          color: #606060;
+          text-decoration: none;
+        }
+
+        a {
+          color: #5497f6;
+          border-bottom: 1px dashed #5497f6;
+
+          &:hover {
+            color: #00419d;
+            border-bottom: 1px dashed #00419d;
+          }
+        }
+      }
+
+      .servicestudent-subcon {
+        clear: both;
+        overflow: hidden;
+        color: #808080;
+        font-size: 14px;
+        padding-top: 10px;
+
+        a {
+          color: #0084ff;
+
+          &:hover {
+            border-bottom: 1px dashed #0084ff;
+          }
+        }
+      }
+
+      .servicestudent-btn {
+        clear: both;
+        overflow: hidden;
+        padding-top: 15px;
+        position: absolute;
+        bottom: 0;
+
+        a {
+          display: inline-block;
+          width: 120px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          background: @colorRed;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          &:hover {
+            background: @hoverSubmit;
+          }
+        }
+
+        .red {
+          background: #ee1d44;
+
+          &:hover {
+            background: #c81839;
+          }
+        }
+
+        // .blue {
+        //   margin-right: 20px;
+        //   color: #282d4a;
+
+        //   &:hover {
+        //     font-size: 15px;
+        //   }
+        // }
+      }
+
+      .yuyue-teacher {
+        .yuyue-modal-btn {
+          display: inline-block;
+          width: 120px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          background: #ee1d44;
+          cursor: pointer;
+
+          &:hover {
+            background: @hoverSubmit;
+          }
+        }
+      }
+    }
+  }
+}

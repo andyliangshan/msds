@@ -1,0 +1,287 @@
+{
+  "name": "msds-sempc",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 8"
+  ],
+  "dependencies": {
+    "async": "^2.3.0",
+    "babel-polyfill": "^6.22.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
+    "classnames": "^2.2.5",
+    "compression": "^1.6.2",
+    "connect-redis": "^3.2.0",
+    "console-polyfill": "^0.2.3",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "cors": "^2.8.2",
+    "ejs": "^2.5.6",
+    "ejs-locals": "^1.0.2",
+    "es5-shim": "^4.5.9",
+    "es6-promise": "^4.1.0",
+    "express": "^4.14.1",
+    "express-session": "^1.15.2",
+    "fastclick": "^1.0.6",
+    "fetch-ie8": "^1.5.0",
+    "glob": "^7.1.1",
+    "history": "1.17.0",
+    "isomorphic-style-loader": "^1.1.0",
+    "less": "^2.7.2",
+    "lodash": "^4.17.4",
+    "method-override": "^2.3.8",
+    "morgan": "^1.8.1",
+    "node-fetch": "^1.6.3",
+    "normalize.css": "^5.0.0",
+    "pretty-error": "^2.0.2",
+    "query-string": "^4.3.1",
+    "react": "^0.14.3",
+    "react-bootstrap": "^0.28.5",
+    "react-dom": "^0.14.3",
+    "react-overlays": "^0.6.0",
+    "react-router": "1.0.3",
+    "react-slick": "^0.9.2",
+    "serve-favicon": "^2.4.2",
+    "slick-carousel": "^1.7.1",
+    "source-map-support": "^0.4.11",
+    "superagent": "^3.5.2",
+    "superagent-retry": "^0.6.0",
+    "whatwg-fetch": "^2.0.2"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "autoprefixer": "^6.7.2",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "babel-template": "^6.22.0",
+    "babel-types": "^6.22.0",
+    "browser-sync": "^2.18.7",
+    "chai": "^3.5.0",
+    "chokidar": "^1.6.1",
+    "css-loader": "^0.26.1",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "editorconfig-tools": "^0.1.1",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-css-modules": "^2.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.0",
+    "front-matter": "^2.1.2",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-wait": "0.0.2",
+    "imagemin-pngquant": "^5.0.0",
+    "json-loader": "^0.5.4",
+    "less-loader": "^4.0.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "lint-staged": "^3.3.0",
+    "markdown-it": "^8.2.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.2.0",
+    "ncp": "^2.0.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.1",
+    "pixrem": "^3.0.2",
+    "pleeease-filters": "^3.0.0",
+    "postcss": "^5.2.12",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^3.0.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-global-import": "^1.0.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.3.1",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-selector-matches": "^2.0.5",
+    "postcss-selector-not": "^2.0.0",
+    "pre-commit": "^1.2.2",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-deep-force-update": "^2.0.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "redbox-react": "^1.3.3",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "sinon": "^2.0.0-pre.5",
+    "style-loader": "^0.16.1",
+    "stylefmt": "^5.1.1",
+    "stylelint": "^7.8.0",
+    "stylelint-config-standard": "^16.0.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.3.0",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1",
+    "write-file-webpack-plugin": "^3.4.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-0",
+      "react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "plugin:css-modules/recommended"
+    ],
+    "plugins": [
+      "css-modules"
+    ],
+    "globals": {
+      "__DEV__": true,
+      "__CDN__": true,
+      "$": true
+    },
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "jsx-a11y/anchor-has-content": "off",
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/no-static-element-interactions": "off",
+      "import/extensions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-no-target-blank": "off",
+      "react/jsx-first-prop-new-line": "off",
+      "react/jsx-indent-props": "off",
+      "react/jsx-closing-bracket-location": "off",
+      "react/prefer-stateless-function": "off",
+      "react/self-closing-comp": "off",
+      "react/require-default-props": "off",
+      "react/forbid-prop-types": "off",
+      "react/no-string-refs": "off",
+      "arrow-parens": "off",
+      "array-callback-return": "off",
+      "arrow-body-style": "off",
+      "max-len": "off",
+      "class-methods-use-this": "off",
+      "no-script-url": "off",
+      "global-require": "off",
+      "no-understcore-dangle": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "string-quotes": "single",
+      "function-name-case": null,
+      "number-leading-zero": null,
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.{cmd,html,json,md,sh,txt,xml,yml}": [
+      "editorconfig-tools fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,less,scss,sss}": [
+      "stylefmt",
+      "stylelint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint:js": "eslint src tools",
+    "lint:css": "stylelint \"src/**/*.{css,less,scss,sss}\"",
+    "lint:staged": "lint-staged",
+    "lint": "yarn run lint:js && yarn run lint:css",
+    "test": "mocha \"src/**/*.test.js\" --require babel-register --require test/setup.js",
+    "test:watch": "yarn run test -- --reporter min --watch",
+    "clean": "babel-node tools/run clean",
+    "lessify": "babel-node tools/run lessify",
+    "iconify": "babel-node tools/run iconify",
+    "imgify": "babel-node tools/run imgify",
+    "revify": "babel-node tools/run revify",
+    "revplacify": "babel-node tools/run revplacify",
+    "cdnify": "babel-node tools/run cdnify",
+    "copy": "babel-node tools/run copy",
+    "bundle": "babel-node tools/run bundle",
+    "build": "babel-node tools/run build",
+    "build:stats": "yarn run build -- --release --analyse",
+    "deploy": "babel-node tools/run deploy",
+    "render": "babel-node tools/run render",
+    "serve": "babel-node tools/run runServer",
+    "start": "babel-node tools/run start",
+    "dev": "babel-node tools/run startExt",
+    "gulp": "gulp",
+    "build2": "babel-node tools/run build2"
+  }
+}

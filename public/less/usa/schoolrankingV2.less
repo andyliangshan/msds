@@ -1,0 +1,333 @@
+@import '../_bsCommon';
+@import '../_variables';
+@import '../_noresponse';
+@import '../_mixins';
+
+body {
+  div {
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .rel1100 {
+    width: 1100px;
+    margin: 0 auto;
+
+    .rank-school {
+      overflow: hidden;
+      width: 100%;
+      clear: both;
+      padding-top: 40px;
+
+      .rank-school-left {
+        float: left;
+        width: 300px;
+        border: 1px solid #e3eaee;
+        border-top: none;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+
+        .ullist {
+          clear: both;
+
+          .mainli {
+            border-top: 1px solid #e3eaee;
+            padding: 14px 0 14px 30px;
+            overflow: hidden;
+            font-size: 15px;
+            color: #353a3b;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+
+            em {
+              position: absolute;
+              right: 20px;
+              top: 20px;
+              width: 12px;
+              height: 12px;
+              cursor: pointer;
+              background: url(/public/img/usaAllPic/rankV3/usa-rank-v3-icon.png) no-repeat center top;
+            }
+          }
+
+          .subli {
+            clear: both;
+            overflow: hidden;
+            background: #f9f9f9;
+            padding: 20px 0 0 40px;
+            display: none;
+            border-top: 1px solid #e3eaee;
+
+            a {
+              display: block;
+              width: 100%;
+              clear: both;
+              overflow: hidden;
+              margin-bottom: 20px;
+              font-size: 14px;
+              color: #353a3b;
+
+              &:hover {
+                color: #ee1d44;
+              }
+
+              a.active {
+                color: #ee1d44;
+              }
+            }
+          }
+        }
+
+        .ullist.active {
+          .mainli {
+            color: #ee1d44;
+
+            em.active {
+              background: url(/public/img/usaAllPic/rankV3/usa-rank-v3-icon-h.png) no-repeat center top;
+            }
+          }
+
+          .subli {
+            display: block;
+
+            a:focus {
+              text-decoration: none;
+              outline: none;
+              outline-offset: 0;
+            }
+
+            a.active {
+              color: #ee1d44;
+            }
+          }
+        }
+
+        .oneli {
+          .mainli {
+            -webkit-border-radius: 8px 8px 0 0;
+            -moz-border-radius: 8px 8px 0 0;
+            border-radius: 8px 8px 0 0;
+          }
+        }
+
+        .enddiv {
+          .subli {
+            -webkit-border-radius: 0 0 8px 8px;
+            -moz-border-radius: 0 0 8px 8px;
+            border-radius: 0 0 8px 8px;
+          }
+        }
+      }
+
+      .rank-school-right {
+        float: left;
+        width: 760px;
+        margin-left: 40px;
+        border: 1px solid #e3eaee;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        overflow-y: auto;
+        height: 1100px;
+        overflow-x: hidden;
+
+        .titlebox {
+          padding: 18px 0 14px;
+          overflow: hidden;
+          border-bottom: 1px solid #e3eaee;
+          text-align: center;
+          color: #000;
+
+          .maintitle {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          .subtext {
+            font-size: 14px;
+            clear: both;
+            overflow: hidden;
+            margin-top: 5px;
+            font-weight: 700;
+          }
+        }
+
+        .schoolranking {
+          clear: both;
+          overflow: hidden;
+          padding: 0 20px;
+
+          .row {
+            padding: 0;
+            margin: 0;
+          }
+
+          .rowData {
+            height: 80px;
+            clear: both;
+            overflow: hidden;
+            border-bottom: 1px solid #ebf1f4;
+            text-align: center;
+
+            .col-xs-2,
+            .col-xs-4 {
+              padding: 0;
+            }
+
+            .ranknum {
+              padding: 18px 0;
+              font-size: 32px;
+              text-align: center;
+              color: #a7aec6;
+              font-weight: normal;
+            }
+
+            .colorred {
+              color: #ff4a2c;
+            }
+
+            .coloryellow {
+              color: #ff8a2b;
+            }
+
+            .colorpink {
+              color: #ffbb36;
+            }
+
+            .ranksch {
+              padding: 18px 0;
+
+              .cname {
+                color: #000;
+                font-size: 16px;
+                font-weight: 700;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+
+              .ename {
+                font-size: 13px;
+                font-family: Arial;
+                color: #999;
+                font-weight: 700;
+                clear: both;
+                overflow: hidden;
+                padding-top: 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+
+            .rankbtn {
+              padding: 30px 0;
+
+              a {
+                display: inline-block;
+                font-size: 14px;
+                color: #0084ff;
+                text-decoration: none;
+
+                &:hover {
+                  border-bottom: 1px dashed #0084ff;
+                }
+
+                &:focus {
+                  outline: none;
+                  outline-offset: 0;
+                }
+              }
+
+              a.enroll {
+                margin-right: 20px;
+              }
+            }
+
+            .rankinfo {
+              font-size: 14px;
+              text-align: center;
+              padding: 25px 0;
+
+              a {
+                display: block;
+                width: 116px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                color: #fff;
+                height: 30px;
+                line-height: 32px;
+              }
+
+              a.schoolinfo {
+                background: #7f869e;
+
+                &:hover {
+                  background: #6a7086;
+                }
+              }
+
+              span.noschoolinfo {
+                display: block;
+                width: 100%;
+                color: #fff;
+                height: 30px;
+                line-height: 30px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                background: #c7cad4;
+              }
+            }
+          }
+
+          .showrankingPic {
+            clear: both;
+            overflow: hidden;
+            width: 100%;
+            height: 83px;
+
+            img {
+              width: 100%;
+              vertical-align: middle;
+            }
+
+            a {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          .shownineth {
+            background: url(/public/img/usaAllPic/rankV3/usa-rank-v3-pic90.png) no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+
+  .rel1920 {
+    background-color: #fff;
+
+    .rel1100 {
+      width: 1100px;
+      margin: 0 auto;
+    }
+  }
+
+  .apply-country,
+  .apply-program,
+  .apply-avgs,
+  .apply-school,
+  .apply-state {
+    p {
+      color: #000 !important;
+    }
+  }
+}
