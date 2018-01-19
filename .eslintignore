@@ -1,0 +1,6 @@
+build/*
+public/libs/*
+public/domain/*
+public/js/vendor/*
+**/*.test.js
+node_modules/*

@@ -1,0 +1,106 @@
+{
+  "yupei": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/yupei.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/yupei-extract.css"
+  },
+  "usaHotCollege": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaHotCollege.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaHotCollege-extract.css"
+  },
+  "enMiddle": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/enMiddle.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/enMiddle-extract.css"
+  },
+  "schoolranking": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/schoolranking.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/schoolranking-extract.css"
+  },
+  "usaMajor": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaMajor.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaMajor-extract.css"
+  },
+  "enHome": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/enHome.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/enHome-extract.css"
+  },
+  "enshangke": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/enshangke.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/enshangke-extract.css"
+  },
+  "usaZhaosg": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaZhaosg.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaZhaosg-extract.css"
+  },
+  "usaAgent": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaAgent.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaAgent-extract.css"
+  },
+  "schoolrankingV4": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/schoolrankingV4.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/schoolrankingV4-extract.css"
+  },
+  "enAgent": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/enAgent.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/enAgent-extract.css"
+  },
+  "hkV1University": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1University.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1University-extract.css"
+  },
+  "enFamous": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/enFamous.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/enFamous-extract.css"
+  },
+  "usaMiddleV4": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaMiddleV4.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaMiddleV4-extract.css"
+  },
+  "midschoolV1": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/midschoolV1.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/midschoolV1-extract.css"
+  },
+  "usaVersion4Home1": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4Home1.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4Home1-extract.css"
+  },
+  "hkV1MasterMeiQia": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1MasterMeiQia.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1MasterMeiQia-extract.css"
+  },
+  "fee": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/fee.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/fee-extract.css"
+  },
+  "usaVersion4": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4-extract.css"
+  },
+  "hkV1Master": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1Master.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/hkV1Master-extract.css"
+  },
+  "gaokaohou": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/gaokaohou.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/gaokaohou-extract.css"
+  },
+  "service": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/service.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/service-extract.css"
+  },
+  "schoolranking_2": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/schoolranking_2.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/schoolranking_2-extract.css"
+  },
+  "usaVersion4_1": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4_1.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/usaVersion4_1-extract.css"
+  },
+  "undergraduateV3": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/undergraduateV3.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/undergraduateV3-extract.css"
+  },
+  "test": {
+    "js": "http://op1szwr44.bkt.clouddn.com/public/js/test.js",
+    "css": "http://op1szwr44.bkt.clouddn.com/public/js/test-extract.css"
+  }
+}

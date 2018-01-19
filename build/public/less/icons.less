@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "msds";
+  src: url('../fonts/msds.eot');
+  src: url('../fonts/msds.eot?#iefix') format('eot'),
+  url('../fonts/msds.woff') format('woff'),
+  url('../fonts/msds.ttf') format('truetype'),
+  url('../fonts/msds.svg#msds') format('svg');
+}
+
+.icon-base-pseudo {
+  font-family: "msds";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-char(@filename) {
+  @back: "\E001";
+   @cuowutishi: "\E002";
+   @dot: "\E003";
+   @down: "\E004";
+   @edit: "\E005";
+   @left: "\E006";
+   @lock: "\E007";
+   @mobile: "\E008";
+   @right: "\E009";
+   @tel: "\E00A";
+   @tick: "\E00B";
+   @times: "\E00C";
+   
+  content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+  @pseudo-selector: ~":@{insert}";
+
+  &@{pseudo-selector} {
+    &:extend(.icon-base-pseudo);
+    .icon-char(@filename);
+  }
+}
+
+.icon-back {
+  .icon(back);
+}
+.icon-cuowutishi {
+  .icon(cuowutishi);
+}
+.icon-dot {
+  .icon(dot);
+}
+.icon-down {
+  .icon(down);
+}
+.icon-edit {
+  .icon(edit);
+}
+.icon-left {
+  .icon(left);
+}
+.icon-lock {
+  .icon(lock);
+}
+.icon-mobile {
+  .icon(mobile);
+}
+.icon-right {
+  .icon(right);
+}
+.icon-tel {
+  .icon(tel);
+}
+.icon-tick {
+  .icon(tick);
+}
+.icon-times {
+  .icon(times);
+}
